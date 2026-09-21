@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nos Offres Hiver 26/27 · The Good Web</title>
+<meta name="description" content="Nos Offres Hiver 26/27 : trois packs média conçus et pensés spécialement pour vous, entièrement personnalisables.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#021859;
+  --ice:#7bbdff;
+  --terra:#f25430;
+  --white:#ffffff;
+  --ink:#0b1a4a;
+  --muted:#46578a;
+  --navy-700:#0a2270;
+  --navy-600:#0d2c85;
+  --ice-50:#f3f9ff;
+  --ice-100:#e3f0ff;
+  --ice-200:#c9e2ff;
+  --terra-50:#fff1ed;
+  --terra-100:#ffdcd2;
+  --line:#d3e4fa;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:16px}
+h1,h2,h3,h4{font-family:Poppins,"Segoe UI",system-ui,sans-serif;color:var(--navy);line-height:1.15;margin:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--terra);outline-offset:2px}
+
+/* Neige en fond */
+#snow{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+
+/* Hero */
+.hero{background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+.hero-inner{padding-top:32px;padding-bottom:170px}
+.brand{display:inline-block}
+.logo{display:block;height:auto}
+.logo .st0{fill:#fff}
+.logo-head{width:118px}
+.logo-foot{width:88px}
+.hero h1{color:var(--white);font-weight:700;font-size:clamp(2.5rem,7vw,4.9rem);letter-spacing:-.02em;margin-top:56px;max-width:14ch}
+.hero .lead{font-family:Poppins,system-ui,sans-serif;font-weight:500;font-size:clamp(1.15rem,2.4vw,1.55rem);margin-top:22px;max-width:30ch;color:var(--white)}
+.hero .sub{margin-top:14px;max-width:56ch;color:var(--ice-200)}
+.pills{list-style:none;padding:0;margin:30px 0 34px;display:flex;flex-wrap:wrap;gap:10px}
+.pills li{border:1px solid rgba(123,189,255,.55);background:rgba(255,255,255,.07);border-radius:999px;padding:7px 16px;font-size:.92rem;font-weight:500}
+.pills li.hot{background:var(--terra);border-color:var(--terra)}
+.btn{display:inline-block;background:var(--terra);color:var(--white);font-weight:600;padding:13px 24px;border-radius:10px;text-decoration:none;border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn:hover{background:#d9431f}
+.btn-ghost{display:inline-block;background:transparent;border:1.5px solid currentColor;color:inherit;font:inherit;font-weight:600;padding:10px 18px;border-radius:10px;cursor:pointer}
+.btn-ghost:hover{background:rgba(123,189,255,.18)}
+.ridge{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:170px;display:block}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav .wrap::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;text-decoration:none;font-size:.9rem;font-weight:500;color:var(--muted);padding:15px 12px;border-bottom:3px solid transparent}
+.nav a:hover{color:var(--navy)}
+.nav a.active{color:var(--navy);border-bottom-color:var(--terra)}
+
+/* Sections */
+.sec{padding:80px 0;scroll-margin-top:52px}
+.sec.alt{background:var(--ice-50)}
+.sec h2{font-size:clamp(1.65rem,3.4vw,2.35rem);font-weight:600;max-width:24ch}
+.sec-intro{max-width:66ch;color:var(--muted);margin:16px 0 38px;font-size:1.04rem}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:980px){.g4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:860px){.g2,.g3{grid-template-columns:1fr}}
+@media (max-width:560px){.g4{grid-template-columns:1fr}}
+.sub-h{font-size:1.2rem;font-weight:600;margin:46px 0 16px}
+
+/* Cartes */
+.card{border-radius:18px;padding:26px;border:1px solid var(--line);background:var(--white)}
+.card h3{font-size:1.18rem;font-weight:600;margin-bottom:10px}
+.card p{color:var(--muted)}
+.c-ice{background:var(--ice-100);border-color:var(--ice-200)}
+.c-navy{background:var(--navy);border-color:var(--navy)}
+.c-navy h3{color:var(--white)}
+.c-navy p,.c-navy li{color:var(--ice-200)}
+.c-terra{background:var(--terra-50);border-color:var(--terra-100)}
+.glyph{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background:var(--navy);color:var(--ice);margin-bottom:14px}
+.glyph svg{width:22px;height:22px;display:block;fill:currentColor}
+.c-navy .glyph{background:var(--ice);color:var(--navy)}
+.num{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--terra);color:var(--white);font-family:Poppins,sans-serif;font-weight:600;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{display:inline-block;background:var(--ice-100);color:var(--navy);border-radius:999px;padding:4px 13px;font-size:.84rem;font-weight:500}
+.c-terra .chip{background:var(--white);border:1px solid var(--terra-100)}
+.tag{display:inline-block;border:1px solid var(--navy);color:var(--navy);border-radius:999px;padding:2px 11px;font-size:.78rem;font-weight:600}
+.tag.on{background:var(--navy);color:var(--white)}
+
+/* Packs */
+.pack{display:flex;flex-direction:column}
+.pack .name{font-family:Poppins,sans-serif;font-weight:700;font-size:1.5rem}
+.pack .price{font-family:Poppins,sans-serif;font-weight:700;font-size:2.4rem;line-height:1.1;margin:6px 0 4px;color:var(--navy)}
+.pack .price small{font-size:.9rem;font-weight:500}
+.pack .tagline{margin-bottom:14px}
+.pack ul{list-style:none;padding:0;margin:0 0 18px;flex:1}
+.pack li{padding:8px 0;border-top:1px solid var(--line);font-size:.95rem;color:var(--muted)}
+.pack .doo{font-size:.92rem;margin-bottom:16px;font-weight:500;color:var(--ink)}
+.pack.top{border-top:5px solid var(--terra)}
+.c-navy .name,.c-navy .price{color:var(--white)}
+.c-navy li{border-top-color:rgba(123,189,255,.3);color:var(--ice-200)}
+.c-navy.pack li{color:var(--ice-200)}
+.c-navy .doo{color:var(--white)}
+.c-ice li{border-top-color:var(--ice-200)}
+
+/* Funnel */
+.funnel{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:8px}
+.step{position:relative;padding:24px 26px 26px;color:var(--white)}
+.step:nth-child(1){background:var(--navy);border-radius:18px 0 0 18px}
+.step:nth-child(2){background:var(--navy-600)}
+.step:nth-child(3){background:var(--terra);border-radius:0 18px 18px 0}
+.step h3{color:var(--white);font-size:1.12rem;margin-bottom:8px}
+.step p{color:rgba(255,255,255,.88);font-size:.95rem}
+.step .who{margin-top:12px;font-size:.84rem;font-weight:600;color:var(--ice)}
+.step:nth-child(3) .who{color:var(--white)}
+@media (max-width:860px){
+  .funnel{grid-template-columns:1fr}
+  .step:nth-child(1){border-radius:18px 18px 0 0}
+  .step:nth-child(3){border-radius:0 0 18px 18px}
+}
+
+/* Tables */
+.tscroll{overflow-x:auto;border-radius:14px;border:1px solid var(--line);background:var(--white)}
+.tbl{width:100%;border-collapse:collapse;min-width:640px;font-size:.95rem}
+.tbl th{background:var(--navy);color:var(--white);text-align:left;font-weight:600;padding:13px 16px;font-size:.9rem}
+.tbl td{padding:13px 16px;border-top:1px solid var(--line);vertical-align:top}
+.tbl td small{display:block;color:var(--muted);margin-top:2px}
+.tbl tr.total td{background:var(--ice-100);font-weight:600;border-top:2px solid var(--navy)}
+.tbl td.n,.tbl th.n{text-align:right;white-space:nowrap}
+.note{font-size:.88rem;color:var(--muted);margin-top:14px;max-width:80ch}
+
+/* Onglets */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:44px 0 20px}
+.tab{font:inherit;font-weight:600;cursor:pointer;border:1.5px solid var(--navy);background:var(--white);color:var(--navy);padding:10px 22px;border-radius:999px}
+.tab[aria-selected="true"]{background:var(--navy);color:var(--white)}
+.panel[hidden]{display:none}
+.opt{margin-top:18px;border-radius:14px;padding:18px 22px;background:var(--terra-50);border:1px solid var(--terra-100);border-left:6px solid var(--terra)}
+.opt strong{color:var(--navy)}
+
+/* Formats */
+.fmt h3{margin-bottom:12px}
+.fmt dl{margin:0}
+.fmt dt{font-weight:600;color:var(--navy);font-size:.9rem;margin-top:12px}
+.fmt dd{margin:2px 0 0;color:var(--muted);font-size:.93rem}
+
+/* Barres géo */
+.bars{display:grid;gap:16px;margin-top:8px}
+.bar-l{font-weight:600;color:var(--navy);margin-bottom:6px;font-size:.95rem}
+.bar{display:flex;height:38px;border-radius:999px;overflow:hidden;font-size:.85rem;font-weight:600}
+.bar span{display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden}
+.b1{background:var(--navy);color:var(--white)}
+.b2{background:var(--ice);color:var(--navy)}
+.b3{background:var(--terra);color:var(--white)}
+.list{margin:0;padding-left:1.1rem;color:var(--muted)}
+.list li{margin:6px 0}
+.list strong{color:var(--navy)}
+
+/* Pyramide */
+.pyr{display:flex;flex-direction:column;align-items:center;gap:8px}
+.lay{border-radius:14px;padding:16px 20px;text-align:center}
+.lay h3{font-size:1.02rem;margin-bottom:4px}
+.lay p{font-size:.9rem}
+.lay.l1{width:52%;background:var(--terra);color:var(--white)}
+.lay.l1 h3,.lay.l1 p{color:var(--white)}
+.lay.l2{width:76%;background:var(--ice)}
+.lay.l2 p{color:var(--navy)}
+.lay.l3{width:100%;background:var(--navy)}
+.lay.l3 h3{color:var(--white)}
+.lay.l3 p{color:var(--ice-200)}
+@media (max-width:700px){.lay.l1{width:78%}.lay.l2{width:90%}}
+.yes{color:var(--terra)}
+.yes svg{width:14px;height:14px;display:inline-block;vertical-align:middle;fill:currentColor}
+
+/* Footer / contacts */
+.foot{background:var(--navy);color:var(--white);padding:70px 0 44px;scroll-margin-top:52px}
+.foot h2{color:var(--white);max-width:26ch;font-size:clamp(1.6rem,3.2vw,2.2rem);font-weight:600}
+.foot .sec-intro{color:var(--ice-200)}
+.contacts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px}
+@media (max-width:900px){.contacts{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.contacts{grid-template-columns:1fr}}
+.ct{background:rgba(255,255,255,.07);border:1px solid rgba(123,189,255,.35);border-radius:14px;padding:18px 20px}
+.ct.off{opacity:.65}
+.ct .who{font-family:Poppins,sans-serif;font-weight:600;font-size:1.05rem;color:var(--white)}
+.ct .role{color:var(--ice);font-size:.9rem;margin-bottom:10px}
+.ct a{display:block;color:var(--white);text-decoration:none;font-size:.93rem;padding:2px 0;word-break:break-all}
+.ct a:hover{color:var(--ice);text-decoration:underline}
+.ct span.plain{display:block;font-size:.93rem;color:var(--ice-200);word-break:break-all}
+.foot-bottom{margin-top:52px;padding-top:28px;border-top:1px solid rgba(123,189,255,.3);display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;font-size:.88rem;color:var(--ice-200)}
+</style>
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+
+<header class="hero" id="top">
+  <div class="wrap hero-inner">
+    <a class="brand" href="#top" aria-label="The Good Web"><svg class="logo logo-head" viewBox="214 252 572 496" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Good Web">
+  <g>
+    <path class="st0" d="M292.13,387.3h-42.97v-94.37h-31.41v-37.41h105.8v37.41h-31.41v94.37Z"/>
+    <path class="st0" d="M411.11,337.23h-35.03v50.07h-42.97v-131.78h42.79v44.67h35.03v-44.67h43.15v131.78h-42.97v-50.07Z"/>
+    <path class="st0" d="M474.29,255.52h87.92v36.85h-47.48v11.35h44.59v34.43h-44.59v12.28h50.55v36.85h-90.99v-131.78Z"/>
+    <path class="st0" d="M288.42,538.95c-10.11,0-19.47-1.61-28.07-4.84-8.61-3.23-16.07-7.85-22.39-13.87-6.32-6.02-11.28-13.31-14.89-21.87-3.61-8.56-5.42-18.11-5.42-28.66s1.81-20.1,5.42-28.66c3.61-8.56,8.54-15.88,14.8-21.96,6.26-6.08,13.6-10.76,22.03-14.05,8.42-3.29,17.45-4.93,27.08-4.93s19.47,1.68,28.44,5.03c8.96,3.35,16.28,7.94,21.94,13.77l-25.1,31.08c-2.65-3.23-5.78-5.8-9.39-7.72-3.61-1.92-8.07-2.89-13.36-2.89-3.49,0-6.89.72-10.2,2.14-3.31,1.43-6.23,3.48-8.76,6.14-2.53,2.67-4.58,5.86-6.14,9.59-1.57,3.72-2.35,7.88-2.35,12.47,0,9.18,2.32,16.66,6.95,22.43,4.63,5.77,12.07,8.66,22.3,8.66,1.81,0,3.67-.15,5.6-.46,1.92-.31,3.43-.77,4.51-1.4v-10.05h-20.58v-34.81h58.68v72.03c-3.01,1.86-6.47,3.57-10.38,5.12-3.91,1.55-8.07,2.89-12.46,4-4.39,1.12-9,2.02-13.81,2.7-4.82.68-9.63,1.02-14.44,1.02Z"/>
+    <path class="st0" d="M351.61,468.97c0-10.55,1.81-20.07,5.42-28.57,3.61-8.5,8.58-15.73,14.89-21.68,6.32-5.96,13.81-10.55,22.48-13.77,8.67-3.23,18.05-4.84,28.16-4.84s19.5,1.61,28.17,4.84c8.67,3.23,16.19,7.82,22.57,13.77,6.38,5.96,11.37,13.19,14.99,21.68,3.61,8.5,5.42,18.02,5.42,28.57s-1.81,20.17-5.42,28.85c-3.61,8.69-8.61,16.1-14.99,22.24-6.38,6.14-13.9,10.89-22.57,14.24-8.67,3.35-18.05,5.03-28.17,5.03s-19.5-1.68-28.16-5.03-16.16-8.1-22.48-14.24c-6.32-6.14-11.28-13.56-14.89-22.24-3.61-8.68-5.42-18.3-5.42-28.85ZM397.28,468.97c0,4.35.63,8.31,1.9,11.91,1.26,3.6,3.01,6.7,5.24,9.31,2.23,2.61,4.9,4.62,8.03,6.05,3.13,1.43,6.5,2.14,10.11,2.14s6.95-.71,10.02-2.14c3.07-1.42,5.75-3.44,8.03-6.05,2.29-2.61,4.06-5.71,5.33-9.31,1.26-3.6,1.9-7.57,1.9-11.91s-.63-8.1-1.9-11.63c-1.26-3.54-3.04-6.51-5.33-8.93-2.29-2.42-4.96-4.31-8.03-5.68-3.07-1.36-6.41-2.05-10.02-2.05s-6.98.68-10.11,2.05c-3.13,1.37-5.81,3.26-8.03,5.68-2.23,2.42-3.97,5.4-5.24,8.93-1.26,3.54-1.9,7.42-1.9,11.63Z"/>
+    <path class="st0" d="M502.36,468.97c0-10.55,1.81-20.07,5.42-28.57,3.61-8.5,8.58-15.73,14.89-21.68,6.32-5.96,13.81-10.55,22.48-13.77,8.67-3.23,18.05-4.84,28.16-4.84s19.5,1.61,28.17,4.84c8.67,3.23,16.19,7.82,22.57,13.77,6.38,5.96,11.37,13.19,14.99,21.68,3.61,8.5,5.42,18.02,5.42,28.57s-1.81,20.17-5.42,28.85c-3.61,8.69-8.61,16.1-14.99,22.24-6.38,6.14-13.9,10.89-22.57,14.24s-18.05,5.03-28.17,5.03-19.5-1.68-28.16-5.03c-8.67-3.35-16.16-8.1-22.48-14.24-6.32-6.14-11.28-13.56-14.89-22.24-3.61-8.68-5.42-18.3-5.42-28.85ZM548.04,468.97c0,4.35.63,8.31,1.9,11.91,1.26,3.6,3.01,6.7,5.24,9.31,2.23,2.61,4.9,4.62,8.03,6.05,3.13,1.43,6.5,2.14,10.11,2.14s6.95-.71,10.02-2.14c3.07-1.42,5.75-3.44,8.03-6.05,2.29-2.61,4.06-5.71,5.33-9.31,1.26-3.6,1.9-7.57,1.9-11.91s-.63-8.1-1.9-11.63c-1.26-3.54-3.04-6.51-5.33-8.93-2.29-2.42-4.96-4.31-8.03-5.68-3.07-1.36-6.41-2.05-10.02-2.05s-6.98.68-10.11,2.05c-3.13,1.37-5.81,3.26-8.03,5.68-2.23,2.42-3.97,5.4-5.24,8.93-1.26,3.54-1.9,7.42-1.9,11.63Z"/>
+    <path class="st0" d="M658.89,535.6v-131.78h47.66c10.11,0,19.77,1.02,28.98,3.07,9.21,2.05,17.33,5.58,24.37,10.61,7.04,5.02,12.67,11.7,16.88,20.01,4.21,8.32,6.32,18.8,6.32,31.46,0,11.54-2.02,21.53-6.05,29.97-4.03,8.44-9.42,15.36-16.16,20.75-6.74,5.4-14.51,9.4-23.29,12.01-8.79,2.61-17.94,3.91-27.44,3.91h-51.27ZM700.23,441.42v56.02h7.94c10.11,0,17.87-2.26,23.29-6.77,5.42-4.51,8.12-11.9,8.12-22.17,0-8.53-2.71-15.18-8.12-19.94-5.42-4.76-12.64-7.14-21.67-7.14h-9.57Z"/>
+    <path class="st0" d="M295.65,683.9h-43.33l-34.84-131.78h45.5l13.72,74.08h.72l14.8-74.08h44.95l16.07,74.08h.72l13.9-74.08h44.05l-35.57,131.78h-43.33l-18.05-74.45h-.72l-18.6,74.45Z"/>
+    <path class="st0" d="M420.23,552.13h87.92v36.85h-47.48v11.35h44.59v34.43h-44.59v12.28h50.55v36.85h-90.99v-131.78Z"/>
+    <path class="st0" d="M609.07,615.41c3.01.75,5.96,1.95,8.85,3.63,2.89,1.68,5.47,3.79,7.76,6.33,2.28,2.54,4.09,5.49,5.42,8.84,1.32,3.35,1.99,7.07,1.99,11.17,0,7.2-1.42,13.25-4.24,18.15-2.83,4.9-6.56,8.87-11.19,11.91-4.64,3.04-9.93,5.21-15.89,6.51-5.96,1.3-12.07,1.95-18.32,1.95h-57.96v-131.78h52.54c5.17,0,10.68.4,16.52,1.21,5.84.81,11.22,2.42,16.16,4.84,4.93,2.42,9.03,5.96,12.28,10.61,3.25,4.65,4.87,10.77,4.87,18.33,0,7.07-1.71,12.91-5.14,17.5-3.43,4.59-7.98,8-13.63,10.24v.56ZM565.56,586.56v16.19h11.56c3.01,0,5.47-.71,7.4-2.14,1.92-1.42,2.89-3.63,2.89-6.61,0-2.48-1.02-4.34-3.07-5.58-2.05-1.24-4.76-1.86-8.12-1.86h-10.65ZM565.56,631.23v17.87h12.82c3.37,0,6.11-.77,8.21-2.33,2.11-1.55,3.16-3.82,3.16-6.79,0-1.74-.45-3.16-1.35-4.28s-2.02-2.02-3.34-2.7c-1.33-.68-2.74-1.15-4.24-1.4-1.51-.25-2.92-.37-4.24-.37h-11.01Z"/>
+  </g>
+  <path class="st0" d="M228.48,738.01c-.08,0-.19-.03-.27-.08l-4.72-2.74v5.44c0,.35-.27.54-.54.54s-.54-.19-.54-.54v-5.44l-4.72,2.74c-.08.05-.19.08-.27.08-.3,0-.54-.29-.54-.56,0-.19.08-.35.27-.46l4.72-2.71-4.72-2.74c-.19-.11-.27-.27-.27-.46,0-.27.24-.56.54-.56.08,0,.19.03.27.08l4.72,2.74v-5.44c0-.35.27-.54.54-.54s.54.19.54.54v5.44l4.72-2.74c.08-.05.19-.08.27-.08.29,0,.54.29.54.56,0,.19-.08.35-.27.46l-4.72,2.71,4.72,2.74c.19.11.27.27.27.46,0,.27-.24.56-.54.56Z"/>
+  <g>
+    <path class="st0" d="M606.22,313.32h-.03c-5.95-.02-10.78-4.88-10.77-10.84.02-5.94,4.86-10.76,10.8-10.76h.03c2.89,0,5.59,1.14,7.63,3.18,2.03,2.04,3.15,4.76,3.14,7.64h-.62s.62,0,.62,0c0,2.89-1.14,5.6-3.18,7.63-2.04,2.03-4.74,3.14-7.61,3.14ZM606.22,292.96c-5.26,0-9.54,4.27-9.56,9.52-.02,5.27,4.26,9.57,9.53,9.59h.03c2.54,0,4.94-.99,6.74-2.78,1.81-1.8,2.81-4.2,2.82-6.75,0-2.55-.98-4.95-2.78-6.76-1.8-1.81-4.2-2.81-6.75-2.82h-.03Z"/>
+    <path class="st0" d="M619.73,382.89l-12.3-.04.07-22.52c0-.39-.15-.75-.42-1.03s-.64-.43-1.02-.43h0c-.38,0-.74.15-1.02.42-.27.27-.43.64-.43,1.03l-.07,22.52-12.31-.04.16-51.25c0-.2-.16-.36-.36-.36h0c-.2,0-.36.16-.36.36l-.06,20.05-6.85-.02.08-24.38c.01-3.61,1.43-7.01,3.99-9.56,2.55-2.54,5.93-3.94,9.53-3.94h.04l15.61.05c3.61.01,7.01,1.43,9.56,3.99,2.55,2.57,3.95,5.97,3.94,9.58l-.08,24.38-6.83-.02.06-20.02c0-.19-.17-.36-.36-.36h0c-.21,0-.37.16-.37.35l-.18,51.22ZM608.67,381.61l9.82.03.18-49.98c0-.88.73-1.59,1.61-1.59h0c.88,0,1.6.72,1.6,1.6l-.06,18.78h4.35s.07-23.12.07-23.12h.62s-.62,0-.62,0c.02-6.78-5.48-12.31-12.25-12.33l-15.61-.05h-.04c-3.27,0-6.34,1.27-8.66,3.57-2.33,2.32-3.61,5.4-3.62,8.68l-.07,23.13h4.37s.06-18.79.06-18.79c0-.88.72-1.6,1.6-1.6h0c.88,0,1.6.73,1.6,1.61l-.15,50,9.83.03.07-21.28c0-.72.28-1.39.79-1.9.51-.51,1.18-.79,1.89-.79h0c.72,0,1.4.29,1.9.8.51.51.78,1.19.78,1.91l-.06,21.28Z"/>
+    <path class="st0" d="M774.01,293.18c-.12,0-.29-.04-.41-.12l-7.18-4.16v8.29c0,.53-.41.82-.82.82s-.82-.29-.82-.82v-8.29l-7.18,4.16c-.12.08-.29.12-.41.12-.45,0-.82-.45-.82-.86,0-.29.12-.53.41-.69l7.18-4.12-7.18-4.16c-.29-.16-.41-.41-.41-.69,0-.41.37-.86.82-.86.12,0,.29.04.41.12l7.18,4.16v-8.29c0-.53.41-.82.82-.82s.82.29.82.82v8.29l7.18-4.16c.12-.08.29-.12.41-.12.45,0,.82.45.82.86,0,.29-.12.53-.41.69l-7.18,4.12,7.18,4.16c.29.16.41.41.41.69,0,.41-.37.86-.82.86Z"/>
+    <path class="st0" d="M650.77,313.46h-.03c-5.95-.02-10.78-4.88-10.77-10.84.02-5.94,4.86-10.76,10.8-10.76h.03c2.89,0,5.59,1.14,7.63,3.18,2.03,2.04,3.15,4.76,3.14,7.64h0c-.02,5.94-4.86,10.77-10.8,10.77ZM650.77,293.1c-5.26,0-9.54,4.27-9.56,9.52-.02,5.27,4.26,9.57,9.53,9.59h.03c5.26,0,9.54-4.27,9.56-9.53,0-2.55-.98-4.95-2.78-6.76-1.8-1.81-4.2-2.81-6.75-2.82h-.03Z"/>
+    <path class="st0" d="M664.27,383.02l-12.3-.04.07-22.52c0-.8-.65-1.45-1.45-1.46h0c-.38,0-.74.15-1.02.42s-.43.64-.43,1.03l-.07,22.52-12.31-.04.16-51.25c0-.1-.04-.19-.1-.26-.07-.07-.16-.11-.25-.11h0c-.2,0-.36.16-.36.36l-.06,20.05-6.85-.02.08-24.38c.01-3.61,1.43-7.01,3.99-9.56,2.55-2.54,5.93-3.94,9.53-3.94h.04l15.61.05c7.46.02,13.51,6.11,13.49,13.58l-.08,24.38-6.83-.02.06-20.02c0-.12-.06-.21-.1-.25-.07-.07-.17-.12-.26-.11-.1,0-.2.04-.27.11-.07.07-.1.15-.1.25l-.18,51.22ZM653.22,381.75l9.82.03.18-49.98c0-.42.17-.82.47-1.12.31-.3.71-.47,1.14-.47.41-.01.84.17,1.14.48.3.3.47.7.46,1.13l-.06,18.78h4.35s.07-23.12.07-23.12c.02-6.78-5.48-12.31-12.25-12.33l-15.61-.05h-.04c-3.27,0-6.34,1.27-8.66,3.57-2.33,2.32-3.61,5.4-3.62,8.68l-.07,23.13h4.37s.06-18.79.06-18.79c0-.88.72-1.6,1.6-1.6h0c.43,0,.83.17,1.14.48.3.3.46.71.46,1.13l-.15,50,9.83.03.06-21.28c0-.72.28-1.39.79-1.9.51-.51,1.18-.79,1.9-.79h0c.72,0,1.39.29,1.9.8.51.51.78,1.19.78,1.91l-.07,21.28Z"/>
+    <path class="st0" d="M695.08,313.59h-.03c-2.88,0-5.59-1.14-7.63-3.19-2.03-2.05-3.15-4.76-3.14-7.65,0-2.88,1.14-5.59,3.19-7.62,2.04-2.02,4.74-3.14,7.61-3.14h.03c2.89,0,5.59,1.14,7.63,3.18,2.03,2.04,3.15,4.76,3.14,7.64,0,2.89-1.14,5.6-3.19,7.63-2.04,2.03-4.74,3.14-7.61,3.14ZM695.08,293.24c-5.26,0-9.54,4.27-9.56,9.52,0,2.56.98,4.96,2.78,6.77,1.8,1.81,4.19,2.81,6.75,2.82,2.57-.01,4.96-.98,6.77-2.78,1.81-1.8,2.81-4.2,2.82-6.75h0c0-2.55-.98-4.95-2.78-6.76-1.8-1.81-4.2-2.81-6.75-2.82h-.03Z"/>
+    <path class="st0" d="M708.58,383.16l-12.3-.04.07-22.52c0-.39-.15-.75-.42-1.03-.27-.27-.63-.42-1.02-.43h0c-.38,0-.75.15-1.02.42-.27.27-.43.64-.43,1.03l-.07,22.52-12.31-.04.16-51.24c0-.1-.04-.19-.1-.26-.07-.07-.19-.13-.25-.11-.12,0-.21.05-.25.1-.07.07-.11.16-.11.26l-.06,20.05-6.85-.02.08-24.38c.01-3.61,1.43-7.01,3.99-9.56,2.55-2.54,5.94-3.94,9.53-3.94h.04l15.61.05c7.46.02,13.51,6.12,13.49,13.58l-.08,24.38-6.83-.02.06-20.02c0-.12-.07-.21-.11-.25-.07-.07-.16-.11-.26-.11-.05.01-.2.04-.27.11-.07.07-.1.15-.1.25l-.18,51.22ZM697.52,381.88l9.82.03.18-49.98c0-.42.17-.82.47-1.12.31-.3.71-.47,1.14-.47h0c.88,0,1.6.72,1.6,1.6l-.06,18.78h4.35s.07-23.12.07-23.12h.62s-.62,0-.62,0c.02-6.78-5.48-12.31-12.25-12.33l-15.61-.05h-.04c-3.27,0-6.34,1.27-8.66,3.57-2.33,2.32-3.61,5.4-3.62,8.68l-.07,23.13h4.37s.06-18.79.06-18.79c0-.43.17-.84.47-1.14.3-.3.7-.46,1.13-.46h0c.43,0,.83.17,1.13.48.3.3.46.71.46,1.13l-.15,50,9.83.03.06-21.28c0-.72.28-1.39.79-1.9.51-.51,1.18-.79,1.89-.79.76.04,1.4.28,1.91.79.51.51.79,1.19.79,1.91l-.07,21.28Z"/>
+    <path class="st0" d="M749.2,302.96c-.02,5.63-4.58,10.17-10.21,10.15-5.62-.02-10.16-4.58-10.15-10.21.02-5.62,4.59-10.16,10.21-10.14s10.16,4.58,10.15,10.2Z"/>
+    <path class="st0" d="M759.67,327.74c.02-7.13-5.74-12.93-12.87-12.95l-15.61-.05c-7.13-.02-12.92,5.74-12.94,12.87l-.07,23.75,5.61.02.06-19.43c0-.54.43-.98.98-.98s.98.45.98.99l-.06,19.43h0l-.1,31.2,11.07.03.07-21.9c0-1.14.93-2.07,2.07-2.07s2.07.94,2.06,2.08l-.07,21.9,11.06.03.1-31.2h.02s.06-19.4.06-19.4c0-.54.45-.97,1-.97s.98.44.98.98l-.06,19.4,5.59.02.07-23.75Z"/>
+  </g>
+  <g>
+    <path class="st0" d="M244.94,744.06h-1.64v-15.08h-5.38v-1.5h12.4v1.5h-5.38v15.08Z"/>
+    <path class="st0" d="M252.28,727.48h1.63v7.19h8.77v-7.19h1.64v16.58h-1.64v-7.84h-8.77v7.84h-1.63v-16.58Z"/>
+    <path class="st0" d="M269.76,742.56h8.61v1.5h-10.24v-16.58h9.97v1.5h-8.34v5.69h7.79v1.5h-7.79v6.39Z"/>
+    <path class="st0" d="M298.54,730.48c-.56-.61-1.23-1.08-2-1.42-.77-.33-1.66-.5-2.66-.5s-1.96.2-2.78.58-1.53.92-2.1,1.58c-.58.66-1.02,1.43-1.33,2.3-.31.87-.47,1.79-.47,2.76s.16,1.89.47,2.76c.31.87.75,1.64,1.33,2.29.58.65,1.28,1.18,2.1,1.57s1.75.58,2.78.58c.91,0,1.74-.1,2.5-.3.76-.2,1.37-.46,1.84-.77v-5.03h-3.75v-1.5h5.38v7.49c-.88.55-1.82.95-2.84,1.22-1.01.27-2.07.4-3.16.4-1.21,0-2.33-.22-3.36-.66-1.03-.44-1.92-1.04-2.66-1.81-.74-.77-1.32-1.69-1.74-2.75s-.62-2.22-.62-3.49.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66c1.29,0,2.41.2,3.36.6.95.4,1.77.95,2.45,1.65l-1.14,1.17Z"/>
+    <path class="st0" d="M319.48,735.77c0,1.26-.21,2.43-.64,3.49s-1.01,1.98-1.76,2.75c-.75.77-1.63,1.38-2.66,1.81-1.02.44-2.13.66-3.33.66s-2.31-.22-3.33-.66-1.91-1.04-2.66-1.81c-.75-.77-1.34-1.69-1.76-2.75-.42-1.06-.64-2.22-.64-3.49s.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66,2.31.22,3.33.66c1.02.44,1.91,1.04,2.66,1.81.75.77,1.34,1.69,1.76,2.75.42,1.06.64,2.22.64,3.49ZM317.76,735.78c0-.97-.15-1.89-.46-2.76s-.74-1.64-1.32-2.3c-.58-.66-1.28-1.19-2.1-1.58s-1.75-.58-2.78-.58-1.96.2-2.78.58c-.83.39-1.53.92-2.1,1.58-.58.66-1.01,1.43-1.32,2.3s-.45,1.79-.45,2.76.15,1.89.45,2.76.74,1.64,1.32,2.29c.58.65,1.28,1.18,2.1,1.57s1.75.58,2.78.58,1.96-.19,2.78-.58,1.53-.91,2.1-1.57c.58-.65,1.01-1.42,1.32-2.29s.46-1.79.46-2.76Z"/>
+    <path class="st0" d="M338.33,735.77c0,1.26-.21,2.43-.64,3.49s-1.01,1.98-1.76,2.75c-.75.77-1.63,1.38-2.66,1.81-1.02.44-2.13.66-3.33.66s-2.31-.22-3.33-.66-1.91-1.04-2.66-1.81c-.75-.77-1.34-1.69-1.76-2.75-.42-1.06-.64-2.22-.64-3.49s.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66,2.31.22,3.33.66c1.02.44,1.91,1.04,2.66,1.81.75.77,1.34,1.69,1.76,2.75.42,1.06.64,2.22.64,3.49ZM336.61,735.78c0-.97-.15-1.89-.46-2.76s-.74-1.64-1.32-2.3c-.58-.66-1.28-1.19-2.1-1.58s-1.75-.58-2.78-.58-1.96.2-2.78.58-1.53.92-2.1,1.58c-.58.66-1.01,1.43-1.32,2.3s-.45,1.79-.45,2.76.15,1.89.45,2.76.74,1.64,1.32,2.29c.58.65,1.28,1.18,2.1,1.57s1.75.58,2.78.58,1.96-.19,2.78-.58,1.53-.91,2.1-1.57c.58-.65,1.01-1.42,1.32-2.29s.46-1.79.46-2.76Z"/>
+    <path class="st0" d="M341.29,727.48h5.34c1,0,2,.17,3.01.51s1.92.86,2.73,1.56c.81.69,1.46,1.56,1.96,2.6.5,1.04.75,2.24.75,3.62s-.25,2.6-.75,3.63c-.5,1.03-1.16,1.89-1.96,2.59-.81.7-1.72,1.21-2.73,1.56-1.01.34-2.01.52-3.01.52h-5.34v-16.58ZM342.92,742.56h3.25c1.21,0,2.27-.2,3.17-.58.9-.39,1.65-.9,2.24-1.53.59-.63,1.03-1.35,1.33-2.17.29-.81.44-1.65.44-2.51s-.15-1.69-.44-2.51c-.3-.81-.74-1.53-1.33-2.17-.59-.63-1.34-1.14-2.24-1.53-.9-.39-1.96-.58-3.17-.58h-3.25v13.58Z"/>
+    <path class="st0" d="M362.73,744.06h-1.79l6.95-16.58h1.59l6.9,16.58h-1.82l-1.77-4.35h-8.31l-1.75,4.35ZM365.09,738.16h7.09l-3.54-8.8-3.54,8.8Z"/>
+    <path class="st0" d="M383.94,744.48c-1.21,0-2.2-.21-2.98-.64-.77-.43-1.39-.97-1.84-1.63-.46-.66-.77-1.37-.94-2.14-.17-.77-.26-1.5-.26-2.19v-10.4h1.63v10.21c0,.67.08,1.32.23,1.96.15.63.4,1.19.74,1.69s.79.89,1.35,1.19c.56.3,1.25.46,2.07.46s1.51-.15,2.07-.46,1.01-.7,1.35-1.19.59-1.05.74-1.69c.15-.63.23-1.28.23-1.96v-10.21h1.63v10.4c0,.69-.09,1.42-.26,2.19-.17.77-.49,1.49-.94,2.14-.45.66-1.07,1.2-1.85,1.63-.78.43-1.77.64-2.96.64Z"/>
+    <path class="st0" d="M393.68,727.48h5.34c1,0,2,.17,3.01.51s1.92.86,2.73,1.56c.81.69,1.46,1.56,1.96,2.6.5,1.04.75,2.24.75,3.62s-.25,2.6-.75,3.63c-.5,1.03-1.16,1.89-1.96,2.59-.81.7-1.72,1.21-2.73,1.56-1.01.34-2.01.52-3.01.52h-5.34v-16.58ZM395.32,742.56h3.25c1.21,0,2.27-.2,3.17-.58.9-.39,1.65-.9,2.24-1.53.59-.63,1.03-1.35,1.33-2.17.29-.81.44-1.65.44-2.51s-.15-1.69-.44-2.51c-.3-.81-.74-1.53-1.33-2.17-.59-.63-1.34-1.14-2.24-1.53-.9-.39-1.96-.58-3.17-.58h-3.25v13.58Z"/>
+    <path class="st0" d="M412.06,744.06h-1.63v-16.58h1.63v16.58Z"/>
+    <path class="st0" d="M417.51,742.56h8.61v1.5h-10.24v-16.58h9.97v1.5h-8.34v5.69h7.79v1.5h-7.79v6.39Z"/>
+    <path class="st0" d="M440.27,741.6h.04v-14.12h1.64v16.58h-2.04l-9.36-14.26h-.05v14.26h-1.63v-16.58h2.04l9.36,14.12Z"/>
+    <path class="st0" d="M459.3,741.37c-.27.42-.6.82-.99,1.2s-.83.71-1.34.99-1.07.51-1.68.68c-.61.17-1.28.25-2.01.25-1.21,0-2.33-.22-3.36-.66-1.03-.44-1.92-1.04-2.66-1.81-.74-.77-1.32-1.69-1.74-2.75s-.62-2.22-.62-3.49.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66c.59,0,1.17.06,1.74.19.57.13,1.1.31,1.6.54.5.23.95.51,1.36.83.41.32.75.69,1.02,1.09l-1.36,1.03c-.17-.27-.39-.53-.67-.8s-.61-.5-.99-.7c-.38-.2-.79-.37-1.24-.49-.45-.12-.93-.19-1.44-.19-1.04,0-1.98.2-2.81.58-.83.39-1.53.91-2.1,1.58-.58.66-1.01,1.43-1.32,2.3-.3.87-.45,1.79-.45,2.75s.16,1.88.47,2.75c.31.87.75,1.64,1.33,2.3.58.66,1.28,1.19,2.1,1.57.83.39,1.75.58,2.78.58.92,0,1.8-.19,2.63-.58s1.53-1.01,2.09-1.87l1.27.84Z"/>
+    <path class="st0" d="M463.3,742.56h8.61v1.5h-10.24v-16.58h9.97v1.5h-8.34v5.69h7.79v1.5h-7.79v6.39Z"/>
+  </g>
+</svg></a>
+    <h1>Nos Offres Hiver 26/27</h1>
+    <p class="lead">Trois packs conçus et pensés spécialement pour vous.</p>
+    <p class="sub">Rien n'est figé : budgets, leviers, zones et données de ciblage s'ajustent à votre convenance.</p>
+    <ul class="pills">
+      <li>Hiver 2026/2027</li>
+      <li class="hot">De 3 000 € à 10 000 € HT</li>
+      <li>Option DOOH en complément</li>
+      <li>Notoriété et réservations</li>
+      <li>France et bassins de départ</li>
+    </ul>
+    <a class="btn" href="#dispositif">Découvrir les packs</a>
+  </div>
+  <svg class="ridge" viewBox="0 0 1440 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path fill="#0a2270" d="M0,120 L140,60 L260,110 L420,30 L560,105 L700,55 L840,115 L1000,40 L1140,100 L1280,58 L1440,110 L1440,200 L0,200 Z"/>
+    <path fill="#0d2c85" d="M0,150 L180,100 L320,140 L500,85 L680,145 L860,95 L1040,150 L1220,100 L1440,145 L1440,200 L0,200 Z"/>
+    <path fill="#ffffff" d="M0,178 L200,150 L400,176 L640,146 L860,178 L1100,150 L1300,176 L1440,158 L1440,200 L0,200 Z"/>
+  </svg>
+</header>
+
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#contexte">Contexte</a>
+    <a href="#dispositif">Dispositif</a>
+    <a href="#environnements">Environnements</a>
+    <a href="#planning">Planning</a>
+    <a href="#budgets">Budgets</a>
+    <a href="#formats">Formats &amp; KPIs</a>
+    <a href="#audiences">Audiences</a>
+    <a href="#data">Stratégie data</a>
+    <a href="#rgpd">RGPD</a>
+    <a href="#contacts">Contacts</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- CONTEXTE -->
+<section class="sec" id="contexte">
+  <div class="wrap">
+    <h2>Être visible au moment où l'on choisit sa destination</h2>
+    <p class="sec-intro">Avant de réserver, vos futurs visiteurs s'inspirent, comparent et décident en ligne : sur leur téléphone, devant leur TV connectée, dans le train ou en ville. Être visible à ce moment-là, c'est remplir vos hébergements, vos activités et vos commerces pendant toute la saison.</p>
+
+    <div class="grid g2">
+      <div class="card c-navy">
+        <h3>Conçues pour vous</h3>
+        <p>Chaque pack a été pensé spécialement pour vous : vos publics, votre territoire, votre calendrier de saison. Ce sont des points de départ, pas des cases à remplir.</p>
+      </div>
+      <div class="card c-terra">
+        <h3>Entièrement personnalisables</h3>
+        <p>Aucun pack n'est figé. Tout s'ajuste à votre convenance, avec un seul interlocuteur pour cadrer l'ensemble.</p>
+        <div class="chips">
+          <span class="chip">Budget</span><span class="chip">Leviers</span><span class="chip">Répartition</span><span class="chip">Zones géographiques</span><span class="chip">Données de ciblage</span><span class="chip">Période</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-h">Nos trois objectifs</h3>
+    <div class="grid g3">
+      <div class="card">
+        <span class="num">1</span>
+        <h3>Faire connaître votre destination</h3>
+        <p>Être présent au moment où les vacances d'hiver se choisissent, avec des images qui donnent envie.</p>
+      </div>
+      <div class="card">
+        <span class="num">2</span>
+        <h3>Toucher les bons publics, au bon endroit</h3>
+        <p>Des données de ciblage et une géographie précise pour parler aux familles, aux passionnés et aux courts séjours.</p>
+      </div>
+      <div class="card">
+        <span class="num">3</span>
+        <h3>Transformer l'intérêt en réservations</h3>
+        <p>Relancer les visiteurs de votre site et mesurer les résultats avec un bilan clair en fin de campagne.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISPOSITIF -->
+<section class="sec alt" id="dispositif">
+  <div class="wrap">
+    <h2>Trois packs, une même logique d'activation</h2>
+    <p class="sec-intro">Du plus compact au plus complet, chaque pack combine des leviers complémentaires. Une option DOOH (écrans urbains) peut s'ajouter à chacun. Ajoutez, retirez ou rééquilibrez : nous construisons avec vous la version qui vous ressemble.</p>
+
+    <div class="grid g3">
+      <div class="card c-ice pack">
+        <div class="name">Flocon</div>
+        <div class="price">3 000 € <small>HT</small></div>
+        <p class="tagline">L'essentiel pour exister auprès des bonnes audiences.</p>
+        <ul>
+          <li>Social Ads (Post + Story)</li>
+          <li>Display avec data Travel et Leboncoin</li>
+          <li>Ciblage géographique en 2 zones</li>
+        </ul>
+        <p class="doo">Option DOOH : +6 000 €</p>
+        <button class="btn-ghost" data-goto="flocon" type="button">Voir le détail</button>
+      </div>
+      <div class="card pack top">
+        <div class="name">Piste</div>
+        <div class="price">8 000 € <small>HT</small></div>
+        <p class="tagline">Séduire de nouveaux visiteurs et relancer ceux qui hésitent.</p>
+        <ul>
+          <li>Social Ads (Post + Story)</li>
+          <li>Display avec data Travel, Leboncoin et Seiki</li>
+          <li>Retargeting de vos visiteurs</li>
+          <li>YouTube</li>
+          <li>Audio Spotify</li>
+          <li>Ciblage géographique en 3 zones</li>
+        </ul>
+        <p class="doo">Option DOOH : +12 000 €</p>
+        <button class="btn-ghost" data-goto="piste" type="button" style="color:var(--navy)">Voir le détail</button>
+      </div>
+      <div class="card c-navy pack">
+        <div class="name">Sommet</div>
+        <div class="price">10 000 € <small>HT</small></div>
+        <p class="tagline" style="color:var(--ice-200)">Le dispositif complet, avec la TV connectée et la data Mastercard.</p>
+        <ul>
+          <li>Tout le pack Piste</li>
+          <li>TV connectée (cTV + OTT)</li>
+          <li>Data Mastercard en plus</li>
+          <li>Ciblage géographique en 3 zones</li>
+        </ul>
+        <p class="doo">Option DOOH : +20 000 €</p>
+        <button class="btn-ghost" data-goto="sommet" type="button" style="color:var(--white)">Voir le détail</button>
+      </div>
+    </div>
+
+    <h3 class="sub-h">La logique d'activation</h3>
+    <div class="funnel">
+      <div class="step">
+        <h3>1. Faire rêver</h3>
+        <p>Toucher un large public avec des images de neige et de montagne qui donnent envie de partir.</p>
+        <p class="who">YouTube, TV connectée, Social Ads, DOOH</p>
+      </div>
+      <div class="step">
+        <h3>2. Faire choisir</h3>
+        <p>Retrouver les publics en intention de séjour, au bon endroit, avec les données de ciblage.</p>
+        <p class="who">Display avec data, Spotify, Social Ads</p>
+      </div>
+      <div class="step">
+        <h3>3. Faire réserver</h3>
+        <p>Relancer ceux qui ont visité votre site sans réserver, au moment où ils naviguent.</p>
+        <p class="who">Retargeting</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENVIRONNEMENTS -->
+<section class="sec" id="environnements">
+  <div class="wrap">
+    <h2>Les environnements de diffusion</h2>
+    <p class="sec-intro">Des supports premium et complémentaires : chacun joue un rôle précis dans le parcours de vos futurs visiteurs.</p>
+
+    <div class="grid g3">
+      <div class="card">
+        <h3>Social Ads</h3>
+        <p>Posts et Stories sur Meta, Instagram, Snapchat et TikTok : des formats courts et visuels, là où vos publics passent du temps.</p>
+        <div class="chips"><span class="tag on">Flocon</span><span class="tag on">Piste</span><span class="tag on">Sommet</span></div>
+      </div>
+      <div class="card">
+        <h3>Display programmatique</h3>
+        <p>Bannières sur des sites éditeurs premium et brand safe, ciblées par les données Travel, Leboncoin, Seiki et Mastercard, avec un retargeting de vos visiteurs.</p>
+        <div class="chips"><span class="tag on">Flocon</span><span class="tag on">Piste</span><span class="tag on">Sommet</span></div>
+      </div>
+      <div class="card">
+        <h3>YouTube</h3>
+        <p>La vidéo de montagne y est très regardée. Vous payez pour les personnes qui regardent réellement votre film (coût par vue).</p>
+        <div class="chips"><span class="tag">Flocon</span><span class="tag on">Piste</span><span class="tag on">Sommet</span></div>
+      </div>
+      <div class="card">
+        <h3>TV connectée</h3>
+        <p>Votre message en plein écran sur les plateformes de replay (comme TF1+, M6+ ou France.tv), avec un ciblage géographique et par profil.</p>
+        <div class="chips"><span class="tag">Flocon</span><span class="tag">Piste</span><span class="tag on">Sommet</span></div>
+      </div>
+      <div class="card">
+        <h3>Audio Spotify</h3>
+        <p>Un spot de 15 à 30 secondes écouté en mobilité, sans risque d'être « hors écran ». Vous payez pour les spots réellement écoutés (coût par écoute).</p>
+        <div class="chips"><span class="tag">Flocon</span><span class="tag on">Piste</span><span class="tag on">Sommet</span></div>
+      </div>
+      <div class="card c-terra">
+        <h3>DOOH, en option</h3>
+        <p>Des écrans dans les gares, centres commerciaux et espaces urbains des villes de départ, avec des diffusions adaptables à l'heure et à la météo. Plus de 33 000 écrans en France.</p>
+        <div class="chips"><span class="tag on">Option sur les 3 packs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANNING -->
+<section class="sec alt" id="planning">
+  <div class="wrap">
+    <h2>Un calendrier calé sur votre saison</h2>
+    <p class="sec-intro">Une progression en quatre temps, ajustée avec vous selon vos dates clés : ouverture, vacances scolaires, événements.</p>
+    <div class="tscroll">
+      <table class="tbl">
+        <thead><tr><th>Phase</th><th>Période</th><th>Objectif</th><th>Leviers mobilisés</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Inspiration</strong></td><td>Octobre à mi-novembre</td><td>Faire connaître la destination avant les réservations</td><td>YouTube, TV connectée, Social Ads, DOOH</td></tr>
+          <tr><td><strong>Réservation</strong></td><td>Mi-novembre à décembre</td><td>Capter les intentions de séjour pour Noël et les vacances de février</td><td>Display avec data, Retargeting, Social Ads, Spotify</td></tr>
+          <tr><td><strong>Dernière minute et week-ends</strong></td><td>Janvier à février</td><td>Remplir les semaines et les week-ends, sur la proximité</td><td>Display géociblé, Social Ads, Spotify, DOOH</td></tr>
+          <tr><td><strong>Fin de saison</strong></td><td>Mars</td><td>Prolonger la saison et relancer les visiteurs de votre site</td><td>Retargeting, Social Ads, Display de proximité</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Calendrier indicatif. Vos créations sont attendues au plus tard 3 jours avant le lancement (7 jours pour le DOOH) : nous vous transmettons les formats dès la signature.</p>
+  </div>
+</section>
+
+<!-- BUDGETS -->
+<section class="sec" id="budgets">
+  <div class="wrap">
+    <h2>Budgets et volumes</h2>
+    <p class="sec-intro">Trois budgets de départ, chacun avec son option DOOH. Ils sont là pour vous donner un cadre : tout peut être ajusté à votre convenance.</p>
+
+    <div class="tscroll">
+      <table class="tbl">
+        <thead><tr><th>Pack</th><th class="n">Budget HT</th><th class="n">Avec option DOOH</th><th class="n">Impressions</th><th class="n">Vues YouTube</th><th class="n">Écoutes Spotify</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Flocon</strong></td><td class="n">3 000 €</td><td class="n">9 000 € (+6 000 €)</td><td class="n">466 600</td><td class="n">–</td><td class="n">–</td></tr>
+          <tr><td><strong>Piste</strong></td><td class="n">8 000 €</td><td class="n">20 000 € (+12 000 €)</td><td class="n">781 900</td><td class="n">33 300</td><td class="n">50 000</td></tr>
+          <tr><td><strong>Sommet</strong></td><td class="n">10 000 €</td><td class="n">30 000 € (+20 000 €)</td><td class="n">868 800</td><td class="n">33 300</td><td class="n">50 000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Détail des packs">
+      <button class="tab" role="tab" id="tab-flocon" data-pack="flocon" aria-controls="panel-flocon" aria-selected="true" type="button">Flocon 3 000 €</button>
+      <button class="tab" role="tab" id="tab-piste" data-pack="piste" aria-controls="panel-piste" aria-selected="false" tabindex="-1" type="button">Piste 8 000 €</button>
+      <button class="tab" role="tab" id="tab-sommet" data-pack="sommet" aria-controls="panel-sommet" aria-selected="false" tabindex="-1" type="button">Sommet 10 000 €</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-flocon" aria-labelledby="tab-flocon">
+      <div class="tscroll">
+        <table class="tbl">
+          <thead><tr><th>Levier</th><th>Tarif</th><th class="n">Budget</th><th class="n">Volume estimé</th></tr></thead>
+          <tbody>
+            <tr><td>Social Ads, Post + Story<small>Meta, Instagram, Snapchat, TikTok</small></td><td>CPM 5 €</td><td class="n">1 500 €</td><td class="n">300 000 impressions</td></tr>
+            <tr><td>Display programmatique, prospection<small>Data Travel et Leboncoin</small></td><td>CPM 9 € (data incluse)</td><td class="n">1 500 €</td><td class="n">166 600 impressions</td></tr>
+            <tr class="total"><td>Total</td><td></td><td class="n">3 000 €</td><td class="n">466 600 impressions</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="opt"><strong>Option DOOH :</strong> +6 000 € pour 125 000 diffusions (CPM 48 €), soit 9 000 € HT au total.</div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-piste" aria-labelledby="tab-piste" hidden>
+      <div class="tscroll">
+        <table class="tbl">
+          <thead><tr><th>Levier</th><th>Tarif</th><th class="n">Budget</th><th class="n">Volume estimé</th></tr></thead>
+          <tbody>
+            <tr><td>Social Ads, Post + Story<small>Meta, Instagram, Snapchat, TikTok</small></td><td>CPM 5 €</td><td class="n">2 000 €</td><td class="n">400 000 impressions</td></tr>
+            <tr><td>Display programmatique, prospection<small>Data Travel, Leboncoin et Seiki</small></td><td>CPM 9 € (data incluse)</td><td class="n">1 750 €</td><td class="n">194 400 impressions</td></tr>
+            <tr><td>Display retargeting<small>Re-toucher les visiteurs de votre site</small></td><td>CPM 4 €</td><td class="n">750 €</td><td class="n">187 500 impressions</td></tr>
+            <tr><td>YouTube</td><td>CPV 0,06 €</td><td class="n">2 000 €</td><td class="n">33 300 vues</td></tr>
+            <tr><td>Audio Spotify</td><td>CPE 0,03 €</td><td class="n">1 500 €</td><td class="n">50 000 écoutes</td></tr>
+            <tr class="total"><td>Total</td><td></td><td class="n">8 000 €</td><td class="n">781 900 impressions, 33 300 vues, 50 000 écoutes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="opt"><strong>Option DOOH :</strong> +12 000 € pour 250 000 diffusions (CPM 48 €), soit 20 000 € HT au total.</div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-sommet" aria-labelledby="tab-sommet" hidden>
+      <div class="tscroll">
+        <table class="tbl">
+          <thead><tr><th>Levier</th><th>Tarif</th><th class="n">Budget</th><th class="n">Volume estimé</th></tr></thead>
+          <tbody>
+            <tr><td>Social Ads, Post + Story<small>Meta, Instagram, Snapchat, TikTok</small></td><td>CPM 5 €</td><td class="n">2 000 €</td><td class="n">400 000 impressions</td></tr>
+            <tr><td>Display programmatique, prospection<small>Data Travel, Leboncoin, Seiki et Mastercard</small></td><td>CPM 9 € (data incluse)</td><td class="n">1 750 €</td><td class="n">194 400 impressions</td></tr>
+            <tr><td>Display retargeting<small>Re-toucher les visiteurs de votre site</small></td><td>CPM 4 €</td><td class="n">750 €</td><td class="n">187 500 impressions</td></tr>
+            <tr><td>YouTube</td><td>CPV 0,06 €</td><td class="n">2 000 €</td><td class="n">33 300 vues</td></tr>
+            <tr><td>TV connectée (cTV + OTT)</td><td>CPM 23 €</td><td class="n">2 000 €</td><td class="n">86 900 impressions</td></tr>
+            <tr><td>Audio Spotify</td><td>CPE 0,03 €</td><td class="n">1 500 €</td><td class="n">50 000 écoutes</td></tr>
+            <tr class="total"><td>Total</td><td></td><td class="n">10 000 €</td><td class="n">868 800 impressions, 33 300 vues, 50 000 écoutes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="opt"><strong>Option DOOH :</strong> +20 000 € pour 416 600 diffusions (CPM 48 €), soit 30 000 € HT au total.</div>
+    </div>
+
+    <p class="note">Tarifs HT. Volumes estimés, arrondis à la centaine inférieure : le bilan de fin de campagne présente les résultats réels. Un autre budget, un autre mix, un levier en plus ou en moins : dites-nous ce qui vous convient, nous ajustons.</p>
+  </div>
+</section>
+
+<!-- FORMATS & KPIs -->
+<section class="sec alt" id="formats">
+  <div class="wrap">
+    <h2>Formats et indicateurs de suivi</h2>
+    <p class="sec-intro">Les spécifications techniques de vos créations et les indicateurs présentés dans le bilan, levier par levier.</p>
+    <div class="grid g3">
+      <div class="card fmt">
+        <h3>Display programmatique</h3>
+        <dl>
+          <dt>Formats</dt><dd>300x600, 300x250, 320x480, 728x90, 160x600 et 320x50 px, en JPEG, PNG ou GIF</dd>
+          <dt>Indicateurs</dt><dd>Impressions, clics, CTR, taux de complétion, études socio-démographique, de géolocalisation et d'affinités</dd>
+        </dl>
+      </div>
+      <div class="card fmt">
+        <h3>YouTube et Social Ads</h3>
+        <dl>
+          <dt>Formats</dt><dd>Post 1080x1080 px, Story 9:16 (1920x1080 px, mp4), YouTube via lien publié, bumper ads de 6 secondes</dd>
+          <dt>Indicateurs</dt><dd>Impressions, clics, CTR, reach, interactions, coût par interaction, CPM et CPV finaux, vues à 25, 50, 75 et 100 %, taux de complétion</dd>
+        </dl>
+      </div>
+      <div class="card fmt">
+        <h3>TV connectée</h3>
+        <dl>
+          <dt>Format</dt><dd>1920x1080 px, 16:9, de 15 à 30 secondes</dd>
+          <dt>Indicateurs</dt><dd>Impressions, clics, CTR, reach, taux de complétion, top chaînes, études socio-démographique, de géolocalisation et d'affinités</dd>
+        </dl>
+      </div>
+      <div class="card fmt">
+        <h3>Audio Spotify</h3>
+        <dl>
+          <dt>Formats</dt><dd>1:1 (640x640 px) ou 9:16 (720x1280 px), spots de 15, 20 ou 30 secondes</dd>
+          <dt>Indicateurs</dt><dd>Impressions, reach, clics, écoutes à 25, 50, 75 et 100 %, taux de complétion, statistiques socio-démographiques, capping, CPE et CPM finaux</dd>
+        </dl>
+      </div>
+      <div class="card fmt">
+        <h3>DOOH</h3>
+        <dl>
+          <dt>Format</dt><dd>9:16 (1080x1920 px), mp4, 10 secondes</dd>
+          <dt>Indicateurs</dt><dd>Impressions, diffusion, top publishers, nombre de plays, statistiques par typologie d'écran</dd>
+        </dl>
+      </div>
+      <div class="card c-terra fmt">
+        <h3>Délais de remise</h3>
+        <dl>
+          <dt>Campagnes digitales</dt><dd>Créations remises au plus tard 3 jours avant le lancement</dd>
+          <dt>DOOH</dt><dd>Créations remises au plus tard 7 jours avant le lancement</dd>
+          <dt>Bilan</dt><dd>Un commentaire global, puis les chiffres levier par levier, avec des recommandations pour la suite</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCES -->
+<section class="sec" id="audiences">
+  <div class="wrap">
+    <h2>Vos audiences et vos zones</h2>
+    <p class="sec-intro">Trois cibles, du cœur de votre clientèle aux publics complémentaires, et trois zones géographiques pour placer chaque euro au bon endroit.</p>
+
+    <div class="grid g3">
+      <div class="card">
+        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></span>
+        <h3>Cible principale : les familles</h3>
+        <p>Parents de 30 à 45 ans avec enfants de 4 à 14 ans, y compris les familles qui découvrent la montagne en hiver. Elles réservent pendant les vacances scolaires : hébergement, activités, forfaits, cours.</p>
+        <div class="chips"><span class="chip">Social Ads</span><span class="chip">Display</span><span class="chip">YouTube</span></div>
+      </div>
+      <div class="card">
+        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></span>
+        <h3>Cible secondaire : les adultes CSP+ amateurs de sports d'hiver</h3>
+        <p>Passionnés de 25 à 55 ans, couples et seniors actifs. Ils partent plusieurs fois par saison, comparent les destinations et restent flexibles sur les dates : précieux pour les semaines creuses.</p>
+        <div class="chips"><span class="chip">YouTube</span><span class="chip">TV connectée</span><span class="chip">Spotify</span><span class="chip">Display</span></div>
+      </div>
+      <div class="card">
+        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></span>
+        <h3>Cible complémentaire : les courts séjours</h3>
+        <p>Jeunes actifs, groupes d'amis et clientèle de proximité. Week-ends et journées, budget plus serré, très présents sur Instagram, TikTok et Spotify.</p>
+        <div class="chips"><span class="chip">Social Ads</span><span class="chip">Spotify</span><span class="chip">Display géociblé</span><span class="chip">DOOH</span></div>
+      </div>
+    </div>
+
+    <h3 class="sub-h">Un ciblage géographique en trois zones</h3>
+    <div class="grid g3">
+      <div class="card c-ice">
+        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></span>
+        <h3>Zone 1 : proximité</h3>
+        <p>Régions et départements autour de votre destination, à 1 à 3 heures de route. Week-ends, courts séjours et journées.</p>
+      </div>
+      <div class="card c-ice">
+        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></span>
+        <h3>Zone 2 : bassins de départ</h3>
+        <p>Grandes métropoles émettrices : Paris, Lyon, Marseille, Toulouse, Bordeaux, Lille… Séjours de vacances et clientèle familiale. C'est le terrain du DOOH.</p>
+      </div>
+      <div class="card c-ice">
+        <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></span>
+        <h3>Zone 3 : zones d'opportunité</h3>
+        <p>Villes secondaires à fort pouvoir d'achat, et pays voisins étudiés avec vous selon vos marchés. Nouveaux publics et remplissage des semaines creuses.</p>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:34px;align-items:start">
+      <div>
+        <h3 class="sub-h" style="margin-top:0">Répartition indicative du budget</h3>
+        <div class="bars">
+          <div>
+            <div class="bar-l">Pack Flocon</div>
+            <div class="bar"><span class="b1" style="width:50%">50 % proximité</span><span class="b2" style="width:50%">50 % bassins de départ</span></div>
+          </div>
+          <div>
+            <div class="bar-l">Packs Piste et Sommet</div>
+            <div class="bar"><span class="b1" style="width:35%">35 % proximité</span><span class="b2" style="width:50%">50 % bassins de départ</span><span class="b3" style="width:15%">15 %</span></div>
+          </div>
+        </div>
+        <p class="note">La répartition se règle à votre convenance. Le DOOH est déployé dans les métropoles de la zone 2.</p>
+      </div>
+      <div>
+        <h3 class="sub-h" style="margin-top:0">Comment chaque levier est géociblé</h3>
+        <ul class="list">
+          <li><strong>Display et Social Ads :</strong> région, département, ville avec rayon autour de votre destination ou d'une métropole.</li>
+          <li><strong>YouTube, TV connectée et Spotify :</strong> géolocalisation par zone.</li>
+          <li><strong>DOOH :</strong> écrans choisis dans les villes des bassins de départ.</li>
+          <li><strong>Retargeting :</strong> sans filtre géographique, il retrouve tous les visiteurs de votre site.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sub-h">Exemples de bassins selon votre territoire</h3>
+    <div class="tscroll">
+      <table class="tbl">
+        <thead><tr><th>Territoire</th><th>Zone 1 : proximité</th><th>Zone 2 : bassins de départ</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Alpes du Nord</strong></td><td>Auvergne-Rhône-Alpes (Lyon, Grenoble, Annecy)</td><td>Île-de-France, Hauts-de-France, Grand Est, Marseille</td></tr>
+          <tr><td><strong>Alpes du Sud</strong></td><td>Provence-Alpes-Côte d'Azur (Marseille, Aix, Nice, Avignon)</td><td>Lyon, Île-de-France, Occitanie</td></tr>
+          <tr><td><strong>Pyrénées</strong></td><td>Occitanie (Toulouse), Nouvelle-Aquitaine (Bordeaux, Pau)</td><td>Île-de-France, Lyon, Pays de la Loire</td></tr>
+          <tr><td><strong>Massif central</strong></td><td>Clermont-Ferrand, Lyon, Saint-Étienne</td><td>Île-de-France, Marseille, Toulouse</td></tr>
+          <tr><td><strong>Jura et Vosges</strong></td><td>Bourgogne-Franche-Comté, Grand Est</td><td>Île-de-France, Lyon, pays voisins</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGIE DATA -->
+<section class="sec alt" id="data">
+  <div class="wrap">
+    <h2>Une stratégie data en trois couches</h2>
+    <p class="sec-intro">Quatre sources de données se complètent pour cibler les bonnes personnes, au bon endroit, au bon moment. Vous pouvez en ajouter ou en retirer : le tarif s'ajuste en conséquence.</p>
+
+    <div class="grid g2" style="align-items:center">
+      <div class="pyr" role="img" aria-label="Pyramide des trois couches de données : mobilité et géographie à la base, intentions voyage et séjour au milieu, dépenses et affinités premium au sommet">
+        <div class="lay l1"><h3>Dépenses et affinités premium</h3><p>Mastercard</p></div>
+        <div class="lay l2"><h3>Intentions voyage et séjour</h3><p>Travel, Leboncoin</p></div>
+        <div class="lay l3"><h3>Mobilité et géographie</h3><p>Seiki</p></div>
+      </div>
+      <div class="grid" style="gap:14px">
+        <div class="card"><h3>Travel</h3><p>Audiences en intention de voyage et de séjour.</p></div>
+        <div class="card"><h3>Leboncoin</h3><p>Segments d'intention construits à partir des recherches faites sur le site, dont des audiences liées aux vacances.</p></div>
+        <div class="card"><h3>Seiki</h3><p>Analyse des déplacements et de la mobilité pour identifier les audiences réellement présentes sur un territoire : un atout pour affiner la géographie.</p></div>
+        <div class="card"><h3>Mastercard</h3><p>Audiences construites à partir des comportements de dépense observés dans les transactions.</p></div>
+      </div>
+    </div>
+
+    <h3 class="sub-h">Les données incluses dans chaque pack</h3>
+    <div class="tscroll">
+      <table class="tbl">
+        <thead><tr><th>Donnée</th><th>Cible visée</th><th>Flocon</th><th>Piste</th><th>Sommet</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Travel</strong></td><td>Familles, adultes CSP+</td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td></tr>
+          <tr><td><strong>Leboncoin</strong></td><td>Familles, courts séjours</td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td></tr>
+          <tr><td><strong>Seiki</strong></td><td>Proximité, courts séjours</td><td>–</td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td></tr>
+          <tr><td><strong>Mastercard</strong></td><td>Adultes CSP+ amateurs de sports d'hiver</td><td>–</td><td>–</td><td class="yes" aria-label="Inclus"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8.5"/></svg></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- RGPD -->
+<section class="sec" id="rgpd">
+  <div class="wrap">
+    <h2>RGPD et brand safety</h2>
+    <p class="sec-intro">Vos messages s'affichent dans des environnements de qualité, et le ciblage respecte le cadre de protection des données.</p>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Protection des données</h3>
+        <ul class="list">
+          <li>Le ciblage repose sur des segments d'audience, pas sur des données nominatives.</li>
+          <li>Le retargeting nécessite un pixel de suivi sur votre site et un bandeau de consentement cookies conforme.</li>
+          <li>La fréquence d'exposition est plafonnée (capping) pour ne pas saturer les internautes.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Brand safety et qualité</h3>
+        <ul class="list">
+          <li>Sites éditeurs premium, listes d'exclusion d'URL et outils de vérification (IAS, DV).</li>
+          <li>Ciblage contextuel positif : vos messages apparaissent près de contenus cohérents avec votre image.</li>
+          <li>Objectif de visibilité (viewability) supérieur à 70 % sur le display, et lutte contre la fraude publicitaire.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- CONTACTS -->
+<footer class="foot" id="contacts">
+  <div class="wrap">
+    <h2>Construisons ensemble votre offre</h2>
+    <p class="sec-intro">Un échange de 20 minutes suffit pour choisir un pack de départ, caler vos périodes et définir vos zones de ciblage. Nous restons à votre entière disposition.</p>
+
+    <div class="contacts">
+      <div class="ct">
+        <div class="who">Jérôme Fages</div>
+        <div class="role">Directeur commercial</div>
+        <a href="tel:+33618746675">06 18 74 66 75</a>
+        <a href="mailto:jerome@thegoodweb.eu">jerome@thegoodweb.eu</a>
+      </div>
+      <div class="ct">
+        <div class="who">Mathilde Coriton</div>
+        <div class="role">Directrice de clientèle</div>
+        <a href="tel:+33648619292">06 48 61 92 92</a>
+        <a href="mailto:mathilde@thegoodweb.eu">mathilde@thegoodweb.eu</a>
+      </div>
+      <div class="ct">
+        <div class="who">Leslie Rogé</div>
+        <div class="role">Cheffe de publicité</div>
+        <a href="tel:+33683736862">06 83 73 68 62</a>
+        <a href="mailto:leslie@thegoodweb.eu">leslie@thegoodweb.eu</a>
+      </div>
+      <div class="ct off">
+        <div class="who">Andrea</div>
+        <div class="role">Équipe The Good Web</div>
+        <span class="plain">andrea@thegoodweb.eu</span>
+      </div>
+      <div class="ct">
+        <div class="who">Sofien Chaganiou</div>
+        <div class="role">Chef de publicité</div>
+        <a href="tel:+33767847067">07 67 84 70 67</a>
+        <a href="mailto:sofien@thegoodweb.eu">sofien@thegoodweb.eu</a>
+      </div>
+      <div class="ct off">
+        <div class="who">Pôle activation</div>
+        <div class="role">Mise en ligne et suivi des campagnes</div>
+        <span class="plain">activation@thegoodweb.eu</span>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span class="brand-foot" role="img" aria-label="The Good Web"><svg class="logo logo-foot" viewBox="214 252 572 496" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Good Web">
+  <g>
+    <path class="st0" d="M292.13,387.3h-42.97v-94.37h-31.41v-37.41h105.8v37.41h-31.41v94.37Z"/>
+    <path class="st0" d="M411.11,337.23h-35.03v50.07h-42.97v-131.78h42.79v44.67h35.03v-44.67h43.15v131.78h-42.97v-50.07Z"/>
+    <path class="st0" d="M474.29,255.52h87.92v36.85h-47.48v11.35h44.59v34.43h-44.59v12.28h50.55v36.85h-90.99v-131.78Z"/>
+    <path class="st0" d="M288.42,538.95c-10.11,0-19.47-1.61-28.07-4.84-8.61-3.23-16.07-7.85-22.39-13.87-6.32-6.02-11.28-13.31-14.89-21.87-3.61-8.56-5.42-18.11-5.42-28.66s1.81-20.1,5.42-28.66c3.61-8.56,8.54-15.88,14.8-21.96,6.26-6.08,13.6-10.76,22.03-14.05,8.42-3.29,17.45-4.93,27.08-4.93s19.47,1.68,28.44,5.03c8.96,3.35,16.28,7.94,21.94,13.77l-25.1,31.08c-2.65-3.23-5.78-5.8-9.39-7.72-3.61-1.92-8.07-2.89-13.36-2.89-3.49,0-6.89.72-10.2,2.14-3.31,1.43-6.23,3.48-8.76,6.14-2.53,2.67-4.58,5.86-6.14,9.59-1.57,3.72-2.35,7.88-2.35,12.47,0,9.18,2.32,16.66,6.95,22.43,4.63,5.77,12.07,8.66,22.3,8.66,1.81,0,3.67-.15,5.6-.46,1.92-.31,3.43-.77,4.51-1.4v-10.05h-20.58v-34.81h58.68v72.03c-3.01,1.86-6.47,3.57-10.38,5.12-3.91,1.55-8.07,2.89-12.46,4-4.39,1.12-9,2.02-13.81,2.7-4.82.68-9.63,1.02-14.44,1.02Z"/>
+    <path class="st0" d="M351.61,468.97c0-10.55,1.81-20.07,5.42-28.57,3.61-8.5,8.58-15.73,14.89-21.68,6.32-5.96,13.81-10.55,22.48-13.77,8.67-3.23,18.05-4.84,28.16-4.84s19.5,1.61,28.17,4.84c8.67,3.23,16.19,7.82,22.57,13.77,6.38,5.96,11.37,13.19,14.99,21.68,3.61,8.5,5.42,18.02,5.42,28.57s-1.81,20.17-5.42,28.85c-3.61,8.69-8.61,16.1-14.99,22.24-6.38,6.14-13.9,10.89-22.57,14.24-8.67,3.35-18.05,5.03-28.17,5.03s-19.5-1.68-28.16-5.03-16.16-8.1-22.48-14.24c-6.32-6.14-11.28-13.56-14.89-22.24-3.61-8.68-5.42-18.3-5.42-28.85ZM397.28,468.97c0,4.35.63,8.31,1.9,11.91,1.26,3.6,3.01,6.7,5.24,9.31,2.23,2.61,4.9,4.62,8.03,6.05,3.13,1.43,6.5,2.14,10.11,2.14s6.95-.71,10.02-2.14c3.07-1.42,5.75-3.44,8.03-6.05,2.29-2.61,4.06-5.71,5.33-9.31,1.26-3.6,1.9-7.57,1.9-11.91s-.63-8.1-1.9-11.63c-1.26-3.54-3.04-6.51-5.33-8.93-2.29-2.42-4.96-4.31-8.03-5.68-3.07-1.36-6.41-2.05-10.02-2.05s-6.98.68-10.11,2.05c-3.13,1.37-5.81,3.26-8.03,5.68-2.23,2.42-3.97,5.4-5.24,8.93-1.26,3.54-1.9,7.42-1.9,11.63Z"/>
+    <path class="st0" d="M502.36,468.97c0-10.55,1.81-20.07,5.42-28.57,3.61-8.5,8.58-15.73,14.89-21.68,6.32-5.96,13.81-10.55,22.48-13.77,8.67-3.23,18.05-4.84,28.16-4.84s19.5,1.61,28.17,4.84c8.67,3.23,16.19,7.82,22.57,13.77,6.38,5.96,11.37,13.19,14.99,21.68,3.61,8.5,5.42,18.02,5.42,28.57s-1.81,20.17-5.42,28.85c-3.61,8.69-8.61,16.1-14.99,22.24-6.38,6.14-13.9,10.89-22.57,14.24s-18.05,5.03-28.17,5.03-19.5-1.68-28.16-5.03c-8.67-3.35-16.16-8.1-22.48-14.24-6.32-6.14-11.28-13.56-14.89-22.24-3.61-8.68-5.42-18.3-5.42-28.85ZM548.04,468.97c0,4.35.63,8.31,1.9,11.91,1.26,3.6,3.01,6.7,5.24,9.31,2.23,2.61,4.9,4.62,8.03,6.05,3.13,1.43,6.5,2.14,10.11,2.14s6.95-.71,10.02-2.14c3.07-1.42,5.75-3.44,8.03-6.05,2.29-2.61,4.06-5.71,5.33-9.31,1.26-3.6,1.9-7.57,1.9-11.91s-.63-8.1-1.9-11.63c-1.26-3.54-3.04-6.51-5.33-8.93-2.29-2.42-4.96-4.31-8.03-5.68-3.07-1.36-6.41-2.05-10.02-2.05s-6.98.68-10.11,2.05c-3.13,1.37-5.81,3.26-8.03,5.68-2.23,2.42-3.97,5.4-5.24,8.93-1.26,3.54-1.9,7.42-1.9,11.63Z"/>
+    <path class="st0" d="M658.89,535.6v-131.78h47.66c10.11,0,19.77,1.02,28.98,3.07,9.21,2.05,17.33,5.58,24.37,10.61,7.04,5.02,12.67,11.7,16.88,20.01,4.21,8.32,6.32,18.8,6.32,31.46,0,11.54-2.02,21.53-6.05,29.97-4.03,8.44-9.42,15.36-16.16,20.75-6.74,5.4-14.51,9.4-23.29,12.01-8.79,2.61-17.94,3.91-27.44,3.91h-51.27ZM700.23,441.42v56.02h7.94c10.11,0,17.87-2.26,23.29-6.77,5.42-4.51,8.12-11.9,8.12-22.17,0-8.53-2.71-15.18-8.12-19.94-5.42-4.76-12.64-7.14-21.67-7.14h-9.57Z"/>
+    <path class="st0" d="M295.65,683.9h-43.33l-34.84-131.78h45.5l13.72,74.08h.72l14.8-74.08h44.95l16.07,74.08h.72l13.9-74.08h44.05l-35.57,131.78h-43.33l-18.05-74.45h-.72l-18.6,74.45Z"/>
+    <path class="st0" d="M420.23,552.13h87.92v36.85h-47.48v11.35h44.59v34.43h-44.59v12.28h50.55v36.85h-90.99v-131.78Z"/>
+    <path class="st0" d="M609.07,615.41c3.01.75,5.96,1.95,8.85,3.63,2.89,1.68,5.47,3.79,7.76,6.33,2.28,2.54,4.09,5.49,5.42,8.84,1.32,3.35,1.99,7.07,1.99,11.17,0,7.2-1.42,13.25-4.24,18.15-2.83,4.9-6.56,8.87-11.19,11.91-4.64,3.04-9.93,5.21-15.89,6.51-5.96,1.3-12.07,1.95-18.32,1.95h-57.96v-131.78h52.54c5.17,0,10.68.4,16.52,1.21,5.84.81,11.22,2.42,16.16,4.84,4.93,2.42,9.03,5.96,12.28,10.61,3.25,4.65,4.87,10.77,4.87,18.33,0,7.07-1.71,12.91-5.14,17.5-3.43,4.59-7.98,8-13.63,10.24v.56ZM565.56,586.56v16.19h11.56c3.01,0,5.47-.71,7.4-2.14,1.92-1.42,2.89-3.63,2.89-6.61,0-2.48-1.02-4.34-3.07-5.58-2.05-1.24-4.76-1.86-8.12-1.86h-10.65ZM565.56,631.23v17.87h12.82c3.37,0,6.11-.77,8.21-2.33,2.11-1.55,3.16-3.82,3.16-6.79,0-1.74-.45-3.16-1.35-4.28s-2.02-2.02-3.34-2.7c-1.33-.68-2.74-1.15-4.24-1.4-1.51-.25-2.92-.37-4.24-.37h-11.01Z"/>
+  </g>
+  <path class="st0" d="M228.48,738.01c-.08,0-.19-.03-.27-.08l-4.72-2.74v5.44c0,.35-.27.54-.54.54s-.54-.19-.54-.54v-5.44l-4.72,2.74c-.08.05-.19.08-.27.08-.3,0-.54-.29-.54-.56,0-.19.08-.35.27-.46l4.72-2.71-4.72-2.74c-.19-.11-.27-.27-.27-.46,0-.27.24-.56.54-.56.08,0,.19.03.27.08l4.72,2.74v-5.44c0-.35.27-.54.54-.54s.54.19.54.54v5.44l4.72-2.74c.08-.05.19-.08.27-.08.29,0,.54.29.54.56,0,.19-.08.35-.27.46l-4.72,2.71,4.72,2.74c.19.11.27.27.27.46,0,.27-.24.56-.54.56Z"/>
+  <g>
+    <path class="st0" d="M606.22,313.32h-.03c-5.95-.02-10.78-4.88-10.77-10.84.02-5.94,4.86-10.76,10.8-10.76h.03c2.89,0,5.59,1.14,7.63,3.18,2.03,2.04,3.15,4.76,3.14,7.64h-.62s.62,0,.62,0c0,2.89-1.14,5.6-3.18,7.63-2.04,2.03-4.74,3.14-7.61,3.14ZM606.22,292.96c-5.26,0-9.54,4.27-9.56,9.52-.02,5.27,4.26,9.57,9.53,9.59h.03c2.54,0,4.94-.99,6.74-2.78,1.81-1.8,2.81-4.2,2.82-6.75,0-2.55-.98-4.95-2.78-6.76-1.8-1.81-4.2-2.81-6.75-2.82h-.03Z"/>
+    <path class="st0" d="M619.73,382.89l-12.3-.04.07-22.52c0-.39-.15-.75-.42-1.03s-.64-.43-1.02-.43h0c-.38,0-.74.15-1.02.42-.27.27-.43.64-.43,1.03l-.07,22.52-12.31-.04.16-51.25c0-.2-.16-.36-.36-.36h0c-.2,0-.36.16-.36.36l-.06,20.05-6.85-.02.08-24.38c.01-3.61,1.43-7.01,3.99-9.56,2.55-2.54,5.93-3.94,9.53-3.94h.04l15.61.05c3.61.01,7.01,1.43,9.56,3.99,2.55,2.57,3.95,5.97,3.94,9.58l-.08,24.38-6.83-.02.06-20.02c0-.19-.17-.36-.36-.36h0c-.21,0-.37.16-.37.35l-.18,51.22ZM608.67,381.61l9.82.03.18-49.98c0-.88.73-1.59,1.61-1.59h0c.88,0,1.6.72,1.6,1.6l-.06,18.78h4.35s.07-23.12.07-23.12h.62s-.62,0-.62,0c.02-6.78-5.48-12.31-12.25-12.33l-15.61-.05h-.04c-3.27,0-6.34,1.27-8.66,3.57-2.33,2.32-3.61,5.4-3.62,8.68l-.07,23.13h4.37s.06-18.79.06-18.79c0-.88.72-1.6,1.6-1.6h0c.88,0,1.6.73,1.6,1.61l-.15,50,9.83.03.07-21.28c0-.72.28-1.39.79-1.9.51-.51,1.18-.79,1.89-.79h0c.72,0,1.4.29,1.9.8.51.51.78,1.19.78,1.91l-.06,21.28Z"/>
+    <path class="st0" d="M774.01,293.18c-.12,0-.29-.04-.41-.12l-7.18-4.16v8.29c0,.53-.41.82-.82.82s-.82-.29-.82-.82v-8.29l-7.18,4.16c-.12.08-.29.12-.41.12-.45,0-.82-.45-.82-.86,0-.29.12-.53.41-.69l7.18-4.12-7.18-4.16c-.29-.16-.41-.41-.41-.69,0-.41.37-.86.82-.86.12,0,.29.04.41.12l7.18,4.16v-8.29c0-.53.41-.82.82-.82s.82.29.82.82v8.29l7.18-4.16c.12-.08.29-.12.41-.12.45,0,.82.45.82.86,0,.29-.12.53-.41.69l-7.18,4.12,7.18,4.16c.29.16.41.41.41.69,0,.41-.37.86-.82.86Z"/>
+    <path class="st0" d="M650.77,313.46h-.03c-5.95-.02-10.78-4.88-10.77-10.84.02-5.94,4.86-10.76,10.8-10.76h.03c2.89,0,5.59,1.14,7.63,3.18,2.03,2.04,3.15,4.76,3.14,7.64h0c-.02,5.94-4.86,10.77-10.8,10.77ZM650.77,293.1c-5.26,0-9.54,4.27-9.56,9.52-.02,5.27,4.26,9.57,9.53,9.59h.03c5.26,0,9.54-4.27,9.56-9.53,0-2.55-.98-4.95-2.78-6.76-1.8-1.81-4.2-2.81-6.75-2.82h-.03Z"/>
+    <path class="st0" d="M664.27,383.02l-12.3-.04.07-22.52c0-.8-.65-1.45-1.45-1.46h0c-.38,0-.74.15-1.02.42s-.43.64-.43,1.03l-.07,22.52-12.31-.04.16-51.25c0-.1-.04-.19-.1-.26-.07-.07-.16-.11-.25-.11h0c-.2,0-.36.16-.36.36l-.06,20.05-6.85-.02.08-24.38c.01-3.61,1.43-7.01,3.99-9.56,2.55-2.54,5.93-3.94,9.53-3.94h.04l15.61.05c7.46.02,13.51,6.11,13.49,13.58l-.08,24.38-6.83-.02.06-20.02c0-.12-.06-.21-.1-.25-.07-.07-.17-.12-.26-.11-.1,0-.2.04-.27.11-.07.07-.1.15-.1.25l-.18,51.22ZM653.22,381.75l9.82.03.18-49.98c0-.42.17-.82.47-1.12.31-.3.71-.47,1.14-.47.41-.01.84.17,1.14.48.3.3.47.7.46,1.13l-.06,18.78h4.35s.07-23.12.07-23.12c.02-6.78-5.48-12.31-12.25-12.33l-15.61-.05h-.04c-3.27,0-6.34,1.27-8.66,3.57-2.33,2.32-3.61,5.4-3.62,8.68l-.07,23.13h4.37s.06-18.79.06-18.79c0-.88.72-1.6,1.6-1.6h0c.43,0,.83.17,1.14.48.3.3.46.71.46,1.13l-.15,50,9.83.03.06-21.28c0-.72.28-1.39.79-1.9.51-.51,1.18-.79,1.9-.79h0c.72,0,1.39.29,1.9.8.51.51.78,1.19.78,1.91l-.07,21.28Z"/>
+    <path class="st0" d="M695.08,313.59h-.03c-2.88,0-5.59-1.14-7.63-3.19-2.03-2.05-3.15-4.76-3.14-7.65,0-2.88,1.14-5.59,3.19-7.62,2.04-2.02,4.74-3.14,7.61-3.14h.03c2.89,0,5.59,1.14,7.63,3.18,2.03,2.04,3.15,4.76,3.14,7.64,0,2.89-1.14,5.6-3.19,7.63-2.04,2.03-4.74,3.14-7.61,3.14ZM695.08,293.24c-5.26,0-9.54,4.27-9.56,9.52,0,2.56.98,4.96,2.78,6.77,1.8,1.81,4.19,2.81,6.75,2.82,2.57-.01,4.96-.98,6.77-2.78,1.81-1.8,2.81-4.2,2.82-6.75h0c0-2.55-.98-4.95-2.78-6.76-1.8-1.81-4.2-2.81-6.75-2.82h-.03Z"/>
+    <path class="st0" d="M708.58,383.16l-12.3-.04.07-22.52c0-.39-.15-.75-.42-1.03-.27-.27-.63-.42-1.02-.43h0c-.38,0-.75.15-1.02.42-.27.27-.43.64-.43,1.03l-.07,22.52-12.31-.04.16-51.24c0-.1-.04-.19-.1-.26-.07-.07-.19-.13-.25-.11-.12,0-.21.05-.25.1-.07.07-.11.16-.11.26l-.06,20.05-6.85-.02.08-24.38c.01-3.61,1.43-7.01,3.99-9.56,2.55-2.54,5.94-3.94,9.53-3.94h.04l15.61.05c7.46.02,13.51,6.12,13.49,13.58l-.08,24.38-6.83-.02.06-20.02c0-.12-.07-.21-.11-.25-.07-.07-.16-.11-.26-.11-.05.01-.2.04-.27.11-.07.07-.1.15-.1.25l-.18,51.22ZM697.52,381.88l9.82.03.18-49.98c0-.42.17-.82.47-1.12.31-.3.71-.47,1.14-.47h0c.88,0,1.6.72,1.6,1.6l-.06,18.78h4.35s.07-23.12.07-23.12h.62s-.62,0-.62,0c.02-6.78-5.48-12.31-12.25-12.33l-15.61-.05h-.04c-3.27,0-6.34,1.27-8.66,3.57-2.33,2.32-3.61,5.4-3.62,8.68l-.07,23.13h4.37s.06-18.79.06-18.79c0-.43.17-.84.47-1.14.3-.3.7-.46,1.13-.46h0c.43,0,.83.17,1.13.48.3.3.46.71.46,1.13l-.15,50,9.83.03.06-21.28c0-.72.28-1.39.79-1.9.51-.51,1.18-.79,1.89-.79.76.04,1.4.28,1.91.79.51.51.79,1.19.79,1.91l-.07,21.28Z"/>
+    <path class="st0" d="M749.2,302.96c-.02,5.63-4.58,10.17-10.21,10.15-5.62-.02-10.16-4.58-10.15-10.21.02-5.62,4.59-10.16,10.21-10.14s10.16,4.58,10.15,10.2Z"/>
+    <path class="st0" d="M759.67,327.74c.02-7.13-5.74-12.93-12.87-12.95l-15.61-.05c-7.13-.02-12.92,5.74-12.94,12.87l-.07,23.75,5.61.02.06-19.43c0-.54.43-.98.98-.98s.98.45.98.99l-.06,19.43h0l-.1,31.2,11.07.03.07-21.9c0-1.14.93-2.07,2.07-2.07s2.07.94,2.06,2.08l-.07,21.9,11.06.03.1-31.2h.02s.06-19.4.06-19.4c0-.54.45-.97,1-.97s.98.44.98.98l-.06,19.4,5.59.02.07-23.75Z"/>
+  </g>
+  <g>
+    <path class="st0" d="M244.94,744.06h-1.64v-15.08h-5.38v-1.5h12.4v1.5h-5.38v15.08Z"/>
+    <path class="st0" d="M252.28,727.48h1.63v7.19h8.77v-7.19h1.64v16.58h-1.64v-7.84h-8.77v7.84h-1.63v-16.58Z"/>
+    <path class="st0" d="M269.76,742.56h8.61v1.5h-10.24v-16.58h9.97v1.5h-8.34v5.69h7.79v1.5h-7.79v6.39Z"/>
+    <path class="st0" d="M298.54,730.48c-.56-.61-1.23-1.08-2-1.42-.77-.33-1.66-.5-2.66-.5s-1.96.2-2.78.58-1.53.92-2.1,1.58c-.58.66-1.02,1.43-1.33,2.3-.31.87-.47,1.79-.47,2.76s.16,1.89.47,2.76c.31.87.75,1.64,1.33,2.29.58.65,1.28,1.18,2.1,1.57s1.75.58,2.78.58c.91,0,1.74-.1,2.5-.3.76-.2,1.37-.46,1.84-.77v-5.03h-3.75v-1.5h5.38v7.49c-.88.55-1.82.95-2.84,1.22-1.01.27-2.07.4-3.16.4-1.21,0-2.33-.22-3.36-.66-1.03-.44-1.92-1.04-2.66-1.81-.74-.77-1.32-1.69-1.74-2.75s-.62-2.22-.62-3.49.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66c1.29,0,2.41.2,3.36.6.95.4,1.77.95,2.45,1.65l-1.14,1.17Z"/>
+    <path class="st0" d="M319.48,735.77c0,1.26-.21,2.43-.64,3.49s-1.01,1.98-1.76,2.75c-.75.77-1.63,1.38-2.66,1.81-1.02.44-2.13.66-3.33.66s-2.31-.22-3.33-.66-1.91-1.04-2.66-1.81c-.75-.77-1.34-1.69-1.76-2.75-.42-1.06-.64-2.22-.64-3.49s.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66,2.31.22,3.33.66c1.02.44,1.91,1.04,2.66,1.81.75.77,1.34,1.69,1.76,2.75.42,1.06.64,2.22.64,3.49ZM317.76,735.78c0-.97-.15-1.89-.46-2.76s-.74-1.64-1.32-2.3c-.58-.66-1.28-1.19-2.1-1.58s-1.75-.58-2.78-.58-1.96.2-2.78.58c-.83.39-1.53.92-2.1,1.58-.58.66-1.01,1.43-1.32,2.3s-.45,1.79-.45,2.76.15,1.89.45,2.76.74,1.64,1.32,2.29c.58.65,1.28,1.18,2.1,1.57s1.75.58,2.78.58,1.96-.19,2.78-.58,1.53-.91,2.1-1.57c.58-.65,1.01-1.42,1.32-2.29s.46-1.79.46-2.76Z"/>
+    <path class="st0" d="M338.33,735.77c0,1.26-.21,2.43-.64,3.49s-1.01,1.98-1.76,2.75c-.75.77-1.63,1.38-2.66,1.81-1.02.44-2.13.66-3.33.66s-2.31-.22-3.33-.66-1.91-1.04-2.66-1.81c-.75-.77-1.34-1.69-1.76-2.75-.42-1.06-.64-2.22-.64-3.49s.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66,2.31.22,3.33.66c1.02.44,1.91,1.04,2.66,1.81.75.77,1.34,1.69,1.76,2.75.42,1.06.64,2.22.64,3.49ZM336.61,735.78c0-.97-.15-1.89-.46-2.76s-.74-1.64-1.32-2.3c-.58-.66-1.28-1.19-2.1-1.58s-1.75-.58-2.78-.58-1.96.2-2.78.58-1.53.92-2.1,1.58c-.58.66-1.01,1.43-1.32,2.3s-.45,1.79-.45,2.76.15,1.89.45,2.76.74,1.64,1.32,2.29c.58.65,1.28,1.18,2.1,1.57s1.75.58,2.78.58,1.96-.19,2.78-.58,1.53-.91,2.1-1.57c.58-.65,1.01-1.42,1.32-2.29s.46-1.79.46-2.76Z"/>
+    <path class="st0" d="M341.29,727.48h5.34c1,0,2,.17,3.01.51s1.92.86,2.73,1.56c.81.69,1.46,1.56,1.96,2.6.5,1.04.75,2.24.75,3.62s-.25,2.6-.75,3.63c-.5,1.03-1.16,1.89-1.96,2.59-.81.7-1.72,1.21-2.73,1.56-1.01.34-2.01.52-3.01.52h-5.34v-16.58ZM342.92,742.56h3.25c1.21,0,2.27-.2,3.17-.58.9-.39,1.65-.9,2.24-1.53.59-.63,1.03-1.35,1.33-2.17.29-.81.44-1.65.44-2.51s-.15-1.69-.44-2.51c-.3-.81-.74-1.53-1.33-2.17-.59-.63-1.34-1.14-2.24-1.53-.9-.39-1.96-.58-3.17-.58h-3.25v13.58Z"/>
+    <path class="st0" d="M362.73,744.06h-1.79l6.95-16.58h1.59l6.9,16.58h-1.82l-1.77-4.35h-8.31l-1.75,4.35ZM365.09,738.16h7.09l-3.54-8.8-3.54,8.8Z"/>
+    <path class="st0" d="M383.94,744.48c-1.21,0-2.2-.21-2.98-.64-.77-.43-1.39-.97-1.84-1.63-.46-.66-.77-1.37-.94-2.14-.17-.77-.26-1.5-.26-2.19v-10.4h1.63v10.21c0,.67.08,1.32.23,1.96.15.63.4,1.19.74,1.69s.79.89,1.35,1.19c.56.3,1.25.46,2.07.46s1.51-.15,2.07-.46,1.01-.7,1.35-1.19.59-1.05.74-1.69c.15-.63.23-1.28.23-1.96v-10.21h1.63v10.4c0,.69-.09,1.42-.26,2.19-.17.77-.49,1.49-.94,2.14-.45.66-1.07,1.2-1.85,1.63-.78.43-1.77.64-2.96.64Z"/>
+    <path class="st0" d="M393.68,727.48h5.34c1,0,2,.17,3.01.51s1.92.86,2.73,1.56c.81.69,1.46,1.56,1.96,2.6.5,1.04.75,2.24.75,3.62s-.25,2.6-.75,3.63c-.5,1.03-1.16,1.89-1.96,2.59-.81.7-1.72,1.21-2.73,1.56-1.01.34-2.01.52-3.01.52h-5.34v-16.58ZM395.32,742.56h3.25c1.21,0,2.27-.2,3.17-.58.9-.39,1.65-.9,2.24-1.53.59-.63,1.03-1.35,1.33-2.17.29-.81.44-1.65.44-2.51s-.15-1.69-.44-2.51c-.3-.81-.74-1.53-1.33-2.17-.59-.63-1.34-1.14-2.24-1.53-.9-.39-1.96-.58-3.17-.58h-3.25v13.58Z"/>
+    <path class="st0" d="M412.06,744.06h-1.63v-16.58h1.63v16.58Z"/>
+    <path class="st0" d="M417.51,742.56h8.61v1.5h-10.24v-16.58h9.97v1.5h-8.34v5.69h7.79v1.5h-7.79v6.39Z"/>
+    <path class="st0" d="M440.27,741.6h.04v-14.12h1.64v16.58h-2.04l-9.36-14.26h-.05v14.26h-1.63v-16.58h2.04l9.36,14.12Z"/>
+    <path class="st0" d="M459.3,741.37c-.27.42-.6.82-.99,1.2s-.83.71-1.34.99-1.07.51-1.68.68c-.61.17-1.28.25-2.01.25-1.21,0-2.33-.22-3.36-.66-1.03-.44-1.92-1.04-2.66-1.81-.74-.77-1.32-1.69-1.74-2.75s-.62-2.22-.62-3.49.21-2.43.64-3.49c.42-1.06,1.01-1.98,1.76-2.75.75-.77,1.64-1.38,2.66-1.81s2.13-.66,3.33-.66c.59,0,1.17.06,1.74.19.57.13,1.1.31,1.6.54.5.23.95.51,1.36.83.41.32.75.69,1.02,1.09l-1.36,1.03c-.17-.27-.39-.53-.67-.8s-.61-.5-.99-.7c-.38-.2-.79-.37-1.24-.49-.45-.12-.93-.19-1.44-.19-1.04,0-1.98.2-2.81.58-.83.39-1.53.91-2.1,1.58-.58.66-1.01,1.43-1.32,2.3-.3.87-.45,1.79-.45,2.75s.16,1.88.47,2.75c.31.87.75,1.64,1.33,2.3.58.66,1.28,1.19,2.1,1.57.83.39,1.75.58,2.78.58.92,0,1.8-.19,2.63-.58s1.53-1.01,2.09-1.87l1.27.84Z"/>
+    <path class="st0" d="M463.3,742.56h8.61v1.5h-10.24v-16.58h9.97v1.5h-8.34v5.69h7.79v1.5h-7.79v6.39Z"/>
+  </g>
+</svg></span>
+      <span>The Good Web, 40 rue Paradis, 13001 Marseille</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* Onglets des packs */
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function select(id){
+    tabs.forEach(function(t){
+      var on=t.getAttribute('data-pack')===id;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      var p=document.getElementById('panel-'+t.getAttribute('data-pack'));
+      if(p){p.hidden=!on;}
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t.getAttribute('data-pack'));});
+    t.addEventListener('keydown',function(e){
+      var k=e.key,n=null;
+      if(k==='ArrowRight'){n=(i+1)%tabs.length;}
+      if(k==='ArrowLeft'){n=(i-1+tabs.length)%tabs.length;}
+      if(n!==null){e.preventDefault();tabs[n].focus();select(tabs[n].getAttribute('data-pack'));}
+    });
+  });
+  [].slice.call(document.querySelectorAll('[data-goto]')).forEach(function(b){
+    b.addEventListener('click',function(){
+      select(b.getAttribute('data-goto'));
+      var s=document.getElementById('budgets');
+      if(s){s.scrollIntoView();}
+    });
+  });
+
+  /* Lien actif dans la navigation */
+  var links=[].slice.call(document.querySelectorAll('.nav a'));
+  var map={};
+  links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){a.classList.remove('active');});
+          var a=map[en.target.id];
+          if(a){a.classList.add('active');a.scrollIntoView({block:'nearest',inline:'nearest'});}
+        }
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(map).forEach(function(id){
+      var el=document.getElementById(id);
+      if(el){io.observe(el);}
+    });
+  }
+
+  /* Neige légère en fond */
+  var c=document.getElementById('snow');
+  if(!c||!c.getContext){return;}
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){c.style.display='none';return;}
+  var ctx=c.getContext('2d');
+  var w=0,h=0,flakes=[],last=0;
+  function make(anywhere){
+    return {
+      x:Math.random()*w,
+      y:anywhere?Math.random()*h:-8,
+      r:.9+Math.random()*2.3,
+      vy:16+Math.random()*30,
+      drift:(Math.random()-.5)*10,
+      ph:Math.random()*6.28,
+      sw:.6+Math.random()*1.2,
+      a:.4+Math.random()*.45,
+      white:Math.random()<.3
+    };
+  }
+  function resize(){
+    var dpr=Math.min(window.devicePixelRatio||1,2);
+    w=window.innerWidth;h=window.innerHeight;
+    c.width=Math.round(w*dpr);c.height=Math.round(h*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    var n=Math.round(Math.max(26,Math.min(64,w/24)));
+    while(flakes.length<n){flakes.push(make(true));}
+    flakes.length=n;
+  }
+  function frame(t){
+    var dt=Math.min((t-last)/1000||0,.05);last=t;
+    ctx.clearRect(0,0,w,h);
+    for(var i=0;i<flakes.length;i++){
+      var f=flakes[i];
+      f.ph+=dt*f.sw;
+      f.y+=f.vy*dt;
+      f.x+=(f.drift+Math.sin(f.ph)*14)*dt;
+      if(f.y>h+8||f.x<-10||f.x>w+10){flakes[i]=make(false);f=flakes[i];}
+      ctx.beginPath();
+      ctx.arc(f.x,f.y,f.r,0,6.2832);
+      ctx.fillStyle=f.white?'rgba(255,255,255,'+f.a+')':'rgba(123,189,255,'+f.a+')';
+      ctx.fill();
+    }
+    requestAnimationFrame(frame);
+  }
+  resize();
+  window.addEventListener('resize',resize);
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
