@@ -40,9 +40,14 @@ a{color:inherit}
 .hero h1 em{font-style:normal; color:var(--white); background:var(--terra); padding:0 .18em; border-radius:.12em; -webkit-box-decoration-break:clone; box-decoration-break:clone}
 .chapo{font-size:clamp(17px,2vw,19.5px); color:#eef3ff; max-width:720px; margin-top:22px}
 .meta{margin-top:26px; font-size:13.5px; color:#dbe6ff}
-.countdown{margin-top:34px; display:inline-flex; align-items:center; gap:14px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25); border-radius:14px; padding:14px 18px}
+.countdown{margin-top:34px; display:inline-flex; align-items:center; gap:16px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25); border-radius:14px; padding:14px 20px; flex-wrap:wrap}
 .countdown b{font-family:Poppins,Arial,sans-serif; font-size:30px; color:var(--white); line-height:1}
 .countdown span{font-size:14px; color:#dbe3f7; line-height:1.4}
+.countdown-units{display:flex; align-items:flex-end; gap:12px}
+.countdown-units .cd-unit{display:flex; flex-direction:column; align-items:center; min-width:38px}
+.countdown-units .cd-unit b{font-variant-numeric:tabular-nums}
+.countdown-units .cd-unit i{font-style:normal; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:#dbe3f7; margin-top:2px}
+.countdown-units .cd-sep{font-family:Poppins,Arial,sans-serif; font-size:26px; color:rgba(255,255,255,.4); line-height:1; margin:0 -4px 14px}
 
 /* NAV */
 nav.anchors{position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--card) 92%, transparent); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line); padding-top:env(safe-area-inset-top,0px)}
@@ -205,7 +210,18 @@ a.contact:hover{background:rgba(255,255,255,.11)}
     <h1>Black Friday, Noël : <em>la bataille de novembre</em> se gagne en septembre</h1>
     <p class="chapo">On traite souvent la fin d'année comme une série de pics à activer au dernier moment. En réalité, c'est un parcours continu où chaque étape nourrit la suivante. Les marques qui performent sur le Q4 ne démarrent pas en novembre : elles installent leurs audiences bien avant. Décryptage, et notre plan média pour s'y mettre maintenant.</p>
     <div class="meta">The Good Web · Septembre 2026 · Lecture 5 min</div>
-    <div class="countdown"><b id="days">65</b><span>jours avant le Black Friday<br>du vendredi 27 novembre 2026</span></div>
+    <div class="countdown" id="tgw-countdown">
+      <div class="countdown-units">
+        <div class="cd-unit"><b id="cd-days">--</b><i>jours</i></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><b id="cd-hours">--</b><i>h</i></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><b id="cd-min">--</b><i>min</i></div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unit"><b id="cd-sec">--</b><i>sec</i></div>
+      </div>
+      <span>avant le Black Friday<br>du vendredi 27 novembre 2026</span>
+    </div>
   </div>
 </header>
 
@@ -460,10 +476,34 @@ a.contact:hover{background:rgba(255,255,255,.11)}
 <script>
 (function(){
   try{
-    var bf=new Date(2026,10,27); var now=new Date(); now.setHours(0,0,0,0);
-    var d=Math.round((bf-now)/86400000);
-    var el=document.getElementById('days');
-    if(d>0){el.textContent=d;} else {el.parentNode.style.display='none';}
+    var target = new Date("2026-11-27T00:00:00+01:00").getTime();
+    var box = document.getElementById('tgw-countdown');
+    var elDays = document.getElementById('cd-days');
+    var elHours = document.getElementById('cd-hours');
+    var elMin = document.getElementById('cd-min');
+    var elSec = document.getElementById('cd-sec');
+
+    function pad(n){ return String(n).padStart(2, '0'); }
+
+    function tick(){
+      var diff = target - Date.now();
+      if (diff <= 0) {
+        box.innerHTML = '<span>C\u2019est le Black Friday&nbsp;!</span>';
+        clearInterval(timer);
+        return;
+      }
+      var days = Math.floor(diff / 86400000);
+      var hours = Math.floor((diff % 86400000) / 3600000);
+      var mins = Math.floor((diff % 3600000) / 60000);
+      var secs = Math.floor((diff % 60000) / 1000);
+      elDays.textContent = days;
+      elHours.textContent = pad(hours);
+      elMin.textContent = pad(mins);
+      elSec.textContent = pad(secs);
+    }
+
+    tick();
+    var timer = setInterval(tick, 1000);
   }catch(e){}
 })();
 </script>
